@@ -32,8 +32,16 @@ body {
 }
 
 h1 {
+  font-family: 'Bebas Neue';
+  font-style: normal;
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.brand {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 64px;
 }
 
 .card {
@@ -70,4 +78,16 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+p {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.subtitle {
+  font-family: 'Lora';
+  font-weight: 400;
+  font-size: 24px;
 }

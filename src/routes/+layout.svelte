@@ -2,6 +2,9 @@
   import '../app.css'
   import "@fontsource/bebas-neue"
   import "@fontsource/overpass"
+  import "@fontsource/roboto"
+  import "@fontsource/roboto-condensed"
+  import "@fontsource/lora"
   import AppBar from '$lib/AppBar.svelte';
 </script>
 
