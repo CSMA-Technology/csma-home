@@ -1,19 +1,35 @@
-<script>
-	import { BROWSER } from "$env/static/private";
-</script>
+<div class="banner">
+  <div class="banner-text">
+    <img src='csma-technology-title.png' alt='CSMA Technology' />
+    <h1>
+      PASSIONATE ABOUT TECHNOLOGY,
+      <br />
+      INSPIRED TO BUILD.
+    </h1>
+    <h2 class="subtitle">
+      We’re here to find effective solutions to interesting problems.
+    </h2>
+  </div>
+</div>
 
-<h1 class="brand">CSMA TECHNOLOGY</h1>
+<style>
+  .banner {
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-image: url('CSMA_Graphic_Waves_Top_Right.png');
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
 
-<h1>
-  PASSIONATE ABOUT TECHNOLOGY,
-  <br />
-  INSPIRED TO BUILD.
-</h1>
-
-<h2 class="subtitle">
-  We’re here to find effective solutions to interesting problems.
-</h2>
-
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+  .banner-text {
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 975px;
+  }
+</style>
