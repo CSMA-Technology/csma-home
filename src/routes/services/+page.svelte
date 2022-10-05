@@ -10,7 +10,6 @@
 
 <div class="services">
   <div class="services-cards">
-
     <div class="column">
       <h2>DEVELOPMENT</h2>
       <div class="card">
@@ -48,8 +47,13 @@
         </ul>
       </div>
     </div>
-
   </div>
+
+  <div>
+    <h2>WORK WITH US</h2>
+    <a class="btn" href='/contact'>Contact Us</a>
+  </div>
+
 </div>
 
 <style>
@@ -57,6 +61,12 @@
     background-image: url('CSMA_Graphic_Waves_Greens.png');
     background-position-y: 55%;
     filter: saturate(115%);
+  }
+
+  .banner-text {
+    text-align: center;
+    color: white;
+    width: 975px;
   }
 
   .services {
@@ -71,5 +81,19 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+  }
+
+  .column h2 {
+    margin-bottom: 0px;
+  }
+
+  .card {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 350px;
+    height: 200px;
   }
 </style>

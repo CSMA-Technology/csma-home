@@ -41,6 +41,8 @@
 
   .banner-text {
     text-align: left;
+    color: white;
+    width: 975px;
   }
 
   .blurb {
