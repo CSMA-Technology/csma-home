@@ -66,7 +66,8 @@
   }
 
   .services-cards {
-    width: 1250px;
+    text-align: left;
+    width: 1200px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
