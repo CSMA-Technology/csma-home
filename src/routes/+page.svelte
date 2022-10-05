@@ -25,7 +25,7 @@
   <div class="blurb-buttons">
     <div>
       <h2>SEE WHAT WE DO</h2>
-      <a class="btn" href='/about'>Our Services</a>
+      <a class="btn" href='/services'>Our Services</a>
     </div>
     <div>
       <h2>WORK WITH US</h2>
@@ -35,6 +35,10 @@
 </div>
 
 <style>
+  .banner {
+    background-image: url('CSMA_Graphic_Waves_Top_Right.png');
+  }
+
   .banner-text {
     text-align: left;
     color: white;
