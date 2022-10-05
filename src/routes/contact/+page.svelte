@@ -60,4 +60,11 @@
     flex-flow: column wrap;
     text-align: left;
   }
+
+  label {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
 </style>
