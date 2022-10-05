@@ -18,26 +18,23 @@
 <div class="blurb">
   <p class="blurb-text">Based in South Florida, CSMA Technology is an independent software and consulting company, 
     excited to work clients to provide quality software, with a focus on growing the local community.
-    We build websites, cross-platform applications, and custom software solutions.
+    We build websites, cross-platform applications, and custom software solutions. Our founders, Adrian and Stephanie,
+    started this company to bring innovative projects to life. If this sounds exciting, we'd love to work with you!
   </p>
 
-  <div>
-    Button 1
-    Button 2
+  <div class="blurb-buttons">
+    <div>
+      <h2>SEE WHAT WE DO</h2>
+      <a class="btn" href='/about'>Our Services</a>
+    </div>
+    <div>
+      <h2>WORK WITH US</h2>
+      <a class="btn" href='/contact'>Contact Us</a>
+    </div>
   </div>
 </div>
 
 <style>
-  .banner {
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('CSMA_Graphic_Waves_Top_Right.png');
-    background-size: cover;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
-
   .banner-text {
     text-align: left;
     color: white;
@@ -51,7 +48,15 @@
   }
   
   .blurb-text {
+    padding: 1em;
     width: 1000px;
     text-align: left;
+  }
+
+  .blurb-buttons {
+    width: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
 </style>
