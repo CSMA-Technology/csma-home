@@ -66,7 +66,7 @@
   .banner-text {
     text-align: center;
     color: white;
-    width: 975px;
+    width: 950px;
   }
 
   .services {
