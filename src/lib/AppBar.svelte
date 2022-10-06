@@ -42,7 +42,6 @@
   }
 
   .branding p {
-    /* padding-top: 4px; */
     margin: 0;
     line-height: 45px;
     color: #FAF7F3;
