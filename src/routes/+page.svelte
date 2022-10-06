@@ -1,6 +1,11 @@
-<div class="banner">
+<script>
+  import csmaTitle from '$lib/assets/csma-technology-title.png';
+  import homeBanner from '$lib/assets/CSMA_Graphic_Waves_Top_Right.png';
+</script>
+
+<div class="banner" style="background-image: url({homeBanner}">
   <div class="banner-text">
-    <img src='csma-technology-title.png' alt='CSMA Technology' />
+    <img src={csmaTitle} alt='CSMA Technology' />
 
     <h1>
       PASSIONATE ABOUT TECHNOLOGY,
@@ -35,10 +40,6 @@
 </div>
 
 <style>
-  .banner {
-    background-image: url('CSMA_Graphic_Waves_Top_Right.png');
-  }
-
   .banner-text {
     text-align: left;
     color: white;
