@@ -1,6 +1,8 @@
 <script>
   import csmaLogo from '$lib/assets/turtle-logo.png';
   // import csmaTitle from '$lib/assets/csma-title-with-background.png';
+  import stephanie from '$lib/assets/Stephanie.png';
+  import rusty from '$lib/assets/rusty.png';
 </script>
 
 <div class="about">
@@ -39,8 +41,14 @@
         </p>
       </div>
       <div class="founders-images">
-        <img id="placeholder" src={csmaLogo} alt="placeholder" />
-        <img id="placeholder" src={csmaLogo} alt="placeholder" />
+        <div>
+          <h3 class="subtitle">Adrian Moya</h3>
+          <img id="avatar" src={rusty} alt="placeholder" />
+        </div>
+        <div>
+          <h3 class="subtitle">Stephanie Cruz</h3>
+          <img id="avatar" src={stephanie} alt="placeholder" />
+        </div>
       </div>
     </div>
   </div>
@@ -97,7 +105,7 @@
     width: 200px;
     display: flex;
     flex-flow: column wrap;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     flex: 1;
   }
@@ -111,7 +119,8 @@
     margin: 0px;
   }
 
-  #placeholder {
+  #avatar {
     width: 125px;
+    border-radius: 5px 0px 0px 5px;
   }
 </style>

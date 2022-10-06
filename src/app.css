@@ -106,10 +106,17 @@ p {
   font-size: 1.2em;
 }
 
-.subtitle {
+h2.subtitle {
   font-family: 'Lora';
   font-weight: 400;
   font-size: 24px;
+}
+
+h3.subtitle {
+  font-family: 'Lora';
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 0px;
 }
 
 ul {
