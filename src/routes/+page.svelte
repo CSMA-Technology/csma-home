@@ -24,11 +24,11 @@
 
   <div class="blurb-buttons">
     <div>
-      <h2>SEE WHAT WE DO</h2>
+      <h2 class="btn-label">SEE WHAT WE DO</h2>
       <a class="btn" href='/services'>Our Services</a>
     </div>
     <div>
-      <h2>WORK WITH US</h2>
+      <h2 class="btn-label">WORK WITH US</h2>
       <a class="btn" href='/contact'>Contact Us</a>
     </div>
   </div>

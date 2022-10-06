@@ -11,7 +11,7 @@
 <div class="services">
   <div class="services-cards">
     <div class="column">
-      <h2>DEVELOPMENT</h2>
+      <h2 class="btn-label">DEVELOPMENT</h2>
       <div class="card">
         <ul>
           <li>Website Development</li>
@@ -24,7 +24,7 @@
     </div>
 
     <div class="column">
-      <h2>CONSULTING</h2>
+      <h2 class="btn-label">CONSULTING</h2>
       <div class="card">
         <ul>
           <li>Website & App Re-Design</li>
@@ -38,7 +38,7 @@
     </div>
 
     <div class="column">
-      <h2>EDUCATION</h2>
+      <h2 class="btn-label">EDUCATION</h2>
       <div class="card">
         <ul>
           <li>Course Development</li>
@@ -50,7 +50,7 @@
   </div>
 
   <div>
-    <h2>WORK WITH US</h2>
+    <h2 class="btn-label">WORK WITH US</h2>
     <a class="btn" href='/contact'>Contact Us</a>
   </div>
 
@@ -81,10 +81,6 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-  }
-
-  .column h2 {
-    margin-bottom: 0px;
   }
 
   .card {

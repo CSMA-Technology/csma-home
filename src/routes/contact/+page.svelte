@@ -39,6 +39,7 @@
     border-radius: 5px;
     font-family: 'Roboto';
     font-size: 16px;
+    padding: 1em;
   }
 
   .inputs {
