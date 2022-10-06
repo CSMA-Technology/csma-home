@@ -26,15 +26,19 @@
 
 <style>
   input[type=text] {
-    height: 25px;
+    height: 40px;
     border: 1px solid #000000;
     border-radius: 5px;
     min-width: 300px;
+    font-family: 'Roboto';
+    font-size: 16px;
   }
 
   textarea {
     border: 1px solid #000000;
     border-radius: 5px;
+    font-family: 'Roboto';
+    font-size: 16px;
   }
 
   .inputs {

@@ -88,6 +88,7 @@
   }
 
   .card {
+    color: black;
     display: flex;
     align-items: flex-start;
     background-color: white;
