@@ -3,6 +3,8 @@
   // import csmaTitle from '$lib/assets/csma-title-with-background.png';
   import stephanie from '$lib/assets/Stephanie.png';
   import rusty from '$lib/assets/rusty.png';
+  import github from '$lib/assets/GitHub-Mark-Light-32px.png';
+  import linkedin from '$lib/assets/In-White-34.png';
 </script>
 
 <div class="about">
@@ -41,13 +43,21 @@
         </p>
       </div>
       <div class="founders-images">
-        <div>
-          <h3 class="subtitle">Adrian Moya</h3>
+        <h3 class="subtitle">Adrian Moya</h3>
+        <div class="founder-card">
           <img id="avatar" src={rusty} alt="placeholder" />
+          <div class="socials">
+            <a href="https://github.com/admoya"><img src={github} alt="Github Logo" /></a>
+            <a href="https://www.linkedin.com/in/adrian-moya-a870a39b/"><img id="linkedinLogo" src={linkedin} alt="Linkedin Logo" /></a>
+          </div>
         </div>
-        <div>
-          <h3 class="subtitle">Stephanie Cruz</h3>
+        <h3 class="subtitle">Stephanie Cruz</h3>
+        <div class="founder-card">
           <img id="avatar" src={stephanie} alt="placeholder" />
+          <div class="socials">
+            <a href="https://github.com/exscruzme"><img src={github} alt="Github Logo" /></a>
+            <a href="https://www.linkedin.com/in/cruz-stephanie/"><img id="linkedinLogo" src={linkedin} alt="Linkedin Logo" /></a>
+          </div>
         </div>
       </div>
     </div>
@@ -60,6 +70,15 @@
     flex-flow: column wrap;
     align-items: center;
     margin: 20px;
+  }
+
+  .about h1 {
+    margin: 0px;
+  }
+
+  #avatar {
+    width: 175px;
+    border-radius: 5px 0px 0px 5px;
   }
 
   .company {
@@ -102,11 +121,16 @@
     flex-flow: row wrap;
   }
 
+  .founder-card {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
   .founders-images {
     width: 200px;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     flex: 1;
   }
@@ -116,12 +140,18 @@
     flex: 2;
   }
 
-  .about h1 {
-    margin: 0px;
+  #linkedinLogo {
+    width: 32px;
   }
 
-  #avatar {
-    width: 125px;
-    border-radius: 5px 0px 0px 5px;
+  .socials {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 50px;
+    padding: 5px 0px;
+    background-color: #00838F;
+    border-radius: 0px 5px 5px 0px;
   }
 </style>
