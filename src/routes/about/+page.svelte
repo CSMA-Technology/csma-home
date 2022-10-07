@@ -5,6 +5,7 @@
   import rusty from '$lib/assets/rusty.png';
   import github from '$lib/assets/GitHub-Mark-Light-32px.png';
   import linkedin from '$lib/assets/In-White-34.png';
+  import email from '$lib/assets/email.png'
 </script>
 
 <div class="about">
@@ -47,16 +48,18 @@
         <div class="founder-card">
           <img id="avatar" src={rusty} alt="placeholder" />
           <div class="socials">
-            <a href="https://github.com/admoya"><img src={github} alt="Github Logo" /></a>
-            <a href="https://www.linkedin.com/in/adrian-moya-a870a39b/"><img id="linkedinLogo" src={linkedin} alt="Linkedin Logo" /></a>
+            <a href="https://github.com/admoya"><img id="logo" src={github} alt="Github Logo" /></a>
+            <a href="https://www.linkedin.com/in/adrian-moya-a870a39b/"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
+            <a href="mailto:adrian@csma.technology"><img id="logo" src={email} alt="Email Logo" /></a>
           </div>
         </div>
         <h3 class="subtitle">Stephanie Cruz</h3>
         <div class="founder-card">
           <img id="avatar" src={stephanie} alt="placeholder" />
           <div class="socials">
-            <a href="https://github.com/exscruzme"><img src={github} alt="Github Logo" /></a>
-            <a href="https://www.linkedin.com/in/cruz-stephanie/"><img id="linkedinLogo" src={linkedin} alt="Linkedin Logo" /></a>
+            <a href="https://github.com/exscruzme"><img id="logo" src={github} alt="Github Logo" /></a>
+            <a href="https://www.linkedin.com/in/cruz-stephanie/"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
+            <a href="mailto:stephanie@csma.technology"><img id="logo" src={email} alt="Email Logo" /></a>
           </div>
         </div>
       </div>
@@ -140,7 +143,7 @@
     flex: 2;
   }
 
-  #linkedinLogo {
+  #logo {
     width: 32px;
   }
 
