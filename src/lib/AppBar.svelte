@@ -2,8 +2,29 @@
   import csmaLogo from '$lib/assets/turtle-logo.png';
 </script>
 
+<nav class="app-bar">
+  <a class="branding" href="/">
+      <img id="csmaLogo" src={csmaLogo} alt="The CSMA logo" />
+      <p>CSMA</p>
+  </a>
+  <ul class="nav-links">
+    <li>
+      <a href='/services'>Services</a>
+    </li>
+    <li>
+      <a href='/contact'>Contact</a>
+    </li>
+    <li>
+      <a href='/about'>About</a>
+    </li>
+    <li>
+      <a href='/projects'>Projects</a>
+    </li>
+  </ul>
+</nav>
+
 <style>
-  .AppBar {
+  .app-bar {
     height: 66px;
     width: 100vw;
     background-color: #00838F;
@@ -11,7 +32,7 @@
     flex-direction: row;
   }
 
-  .Branding {
+  .branding {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -20,8 +41,7 @@
     gap: .75rem;
   }
 
-  .Branding p {
-    /* padding-top: 4px; */
+  .branding p {
     margin: 0;
     line-height: 45px;
     color: #FAF7F3;
@@ -36,7 +56,7 @@
     margin-top: -4px;
   }
 
-  .NavLinks {
+  .nav-links {
     display: flex;
     flex-direction: row;
     font-family: Overpass;
@@ -49,29 +69,8 @@
     gap: 1rem;
   }
 
-  .NavLinks a {
+  .nav-links a {
     color: white;
   }
 
 </style>
-
-<nav class="AppBar">
-  <a class="Branding" href="/">
-      <img id="csmaLogo" src={csmaLogo} alt="The CSMA logo" />
-      <p>CSMA</p>
-  </a>
-  <ul class="NavLinks">
-    <li>
-      <a href='/about'>About</a>
-    </li>
-    <li>
-      <a href='/services'>Services</a>
-    </li>
-    <li>
-      <a href='/contact'>Contact</a>
-    </li>
-    <li>
-      <a href='/projects'>Projects</a>
-    </li>
-  </ul>
-</nav>

@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #040622;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,6 +23,27 @@ a {
 a:hover {
   color: #535bf2;
 }
+a.btn {
+  color: black;
+}
+a.btn:hover {
+  color: white;
+}
+
+.banner {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.brand {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 64px;
+}
 
 body {
   margin: 0;
@@ -31,43 +52,76 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-.card {
-  padding: 2em;
-}
-
-button {
-  border-radius: 8px;
+button, .btn {
+  color: black;
+  width: 150px;
+  border-radius: 5px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  padding: 0.6em 0.6em;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: 'Roboto';
+  background: #FF8E58;
   cursor: pointer;
   transition: border-color 0.25s;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: inline-block;
 }
 button:hover {
-  border-color: #646cff;
+  color: white;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+h1 {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+
+h2.btn-label {
+  margin-bottom: 0px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: black;
+    background-color: #fff7f0;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+
+p {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+h2.subtitle {
+  font-family: 'Lora';
+  font-weight: 400;
+  font-size: 24px;
+}
+
+h3.subtitle {
+  font-family: 'Lora';
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+ul {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.2em;
+  text-align: left;
 }
