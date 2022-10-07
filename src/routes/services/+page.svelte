@@ -1,8 +1,8 @@
 <script>
-  import servicesBanner from '$lib/assets/CSMA_Graphic_Waves_Greens.png';
+  import servicesBanner from '$lib/assets/CSMA_Graphic_Waves_Greens_180.png';
 </script>
 
-<div class="banner" style="background-image: url({servicesBanner})">
+<div class="banner" id="banner-img" style="background-image: url({servicesBanner})">
   <div class="banner-text">
     <h1>Here's some of what we offer.</h1>
     <h2 class="subtitle">
@@ -62,7 +62,7 @@
 
 <style>
   .banner {
-    background-position-y: 55%;
+    background-position-y: 43%;
     filter: saturate(115%);
   }
 

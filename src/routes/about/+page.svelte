@@ -82,6 +82,7 @@
 
   .content {
     width: 900px;
+    color: black;
     background-color: white;
     padding: 25px 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
