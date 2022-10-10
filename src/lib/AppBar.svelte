@@ -92,7 +92,8 @@
 
   @media (max-width: 640px) {
     .hide-menu {
-      display: none !important;
+      opacity: 0;
+      visibility: hidden;
     }
 
     .hamburger-button {
@@ -114,6 +115,7 @@
       text-align: right;
       padding-top: 1rem;
       padding-bottom: 1rem;
+      transition: opacity 600ms, visibility 600ms;
     }
 
     .nav-links a {
