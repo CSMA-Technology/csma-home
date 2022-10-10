@@ -5,9 +5,9 @@
 
 <div class="banner" style="background-image: url({homeBanner}">
   <div class="banner-text">
-    <img src={csmaTitle} alt='CSMA Technology' />
+    <img class="banner-image" src={csmaTitle} alt='CSMA Technology' />
 
-    <h1>
+    <h1 class="title">
       PASSIONATE ABOUT TECHNOLOGY,
       <br />
       INSPIRED TO BUILD.
@@ -21,7 +21,7 @@
 </div>
 
 <div class="blurb">
-  <p class="blurb-text">Based in South Florida, CSMA Technology is an independent software and consulting company, 
+  <p class="blurb-text">Based in South Florida, CSMA Technology is an independent software and consulting company,
     excited to work clients to provide quality software, with a focus on growing the local community.
     We build websites, cross-platform applications, and custom software solutions. Our founders, Adrian and Stephanie,
     started this company to bring innovative projects to life. If this sounds exciting, we'd love to work with you!
@@ -40,28 +40,52 @@
 </div>
 
 <style>
+  .banner {
+    display: flex;
+    align-items: center;
+    max-width: 100vw;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-left: 1rem;
+  }
+
   .banner-text {
     text-align: left;
     color: white;
-    width: 975px;
+    max-width: 90%;
+  }
+
+  .banner-image {
+    margin-top: 2rem;
+    max-width: 60%;
+  }
+
+  @media (max-width: 640px) {
+    .title {
+      font-size: 2em;
+    }
+    .subtitle {
+      font-size: 1.2em;
+    }
   }
 
   .blurb {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    padding: 1rem;
   }
-  
+
   .blurb-text {
-    padding: 1em;
-    width: 1000px;
     text-align: left;
   }
 
   .blurb-buttons {
-    width: 600px;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 1rem;
   }
 </style>
