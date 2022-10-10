@@ -39,9 +39,11 @@
 <style>
   .app-bar {
     height: 66px;
+    width: 100vw;
     background-color: #00838F;
     display: flex;
     flex-direction: row;
+    background-size: 100%;
   }
 
   .branding {
@@ -70,8 +72,10 @@
   }
 
   .nav-links {
+    flex-grow: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    margin-right: 2rem;
     font-family: Overpass;
     font-size: 20px;
     font-weight: 700;

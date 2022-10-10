@@ -7,19 +7,18 @@
   <div class="banner-text">
     <img class="banner-image" src={csmaTitle} alt='CSMA Technology' />
 
-    <h1 class="title">
+    <h1 class="banner-title">
       PASSIONATE ABOUT TECHNOLOGY,
       <br />
       INSPIRED TO BUILD.
     </h1>
 
-    <h2 class="subtitle">
+    <h2 class="banner-subtitle">
       We’re here to find effective solutions to interesting problems.
     </h2>
 
   </div>
 </div>
-
 <div class="blurb">
   <p class="blurb-text">Based in South Florida, CSMA Technology is an independent software and consulting company,
     excited to work clients to provide quality software, with a focus on growing the local community.
@@ -40,41 +39,20 @@
 </div>
 
 <style>
-  .banner {
-    display: flex;
-    align-items: center;
-    max-width: 100vw;
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    margin-left: 1rem;
-  }
-
-  .banner-text {
-    text-align: left;
-    color: white;
-    max-width: 90%;
-  }
-
   .banner-image {
     margin-top: 2rem;
     max-width: 60%;
-  }
-
-  @media (max-width: 640px) {
-    .title {
-      font-size: 2em;
-    }
-    .subtitle {
-      font-size: 1.2em;
-    }
   }
 
   .blurb {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    padding: 1rem;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .blurb-text {
@@ -87,5 +65,11 @@
     flex-flow: row wrap;
     justify-content: space-around;
     gap: 1rem;
+  }
+
+  @media (max-width: 640px) {
+    .blurb {
+      padding: 1rem;
+    }
   }
 </style>
