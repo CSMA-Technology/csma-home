@@ -2,7 +2,7 @@
   import csmaLogo from '$lib/assets/turtle-logo.png';
   // import csmaTitle from '$lib/assets/csma-title-with-background.png';
   import stephanie from '$lib/assets/Stephanie.png';
-  import rusty from '$lib/assets/rusty.png';
+  import adrian from '$lib/assets/adrian.jpg';
   import github from '$lib/assets/GitHub-Mark-Light-32px.png';
   import linkedin from '$lib/assets/In-White-34.png';
   import email from '$lib/assets/email.png'
@@ -46,7 +46,7 @@
       <div class="founders-images">
         <h3 class="subtitle">Adrian Moya</h3>
         <div class="founder-card">
-          <img class="avatar" src={rusty} alt="placeholder" />
+          <img class="avatar" src={adrian} alt="placeholder" />
           <div class="socials">
             <a href="https://github.com/admoya"><img id="logo" src={github} alt="Github Logo" /></a>
             <a href="https://www.linkedin.com/in/adrian-moya-a870a39b/"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
