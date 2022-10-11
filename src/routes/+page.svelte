@@ -1,6 +1,6 @@
 <script>
   import csmaTitle from '$lib/assets/csma-technology-title.png';
-  import homeBanner from '$lib/assets/CSMA_Graphic_Waves_Top_Right.png';
+  import homeBanner from '$lib/assets/home/CSMA_Graphic_Waves_Top_Right.png';
 </script>
 
 <div class="banner" style="background-image: url({homeBanner}">

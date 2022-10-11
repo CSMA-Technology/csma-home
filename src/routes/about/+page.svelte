@@ -1,11 +1,10 @@
 <script>
   import csmaLogo from '$lib/assets/turtle-logo.png';
-  // import csmaTitle from '$lib/assets/csma-title-with-background.png';
-  import stephanie from '$lib/assets/Stephanie.png';
-  import rusty from '$lib/assets/rusty.png';
-  import github from '$lib/assets/GitHub-Mark-Light-32px.png';
-  import linkedin from '$lib/assets/In-White-34.png';
-  import email from '$lib/assets/email.png'
+  import stephanie from '$lib/assets/about/Stephanie.png';
+  import rusty from '$lib/assets/about/rusty.png';
+  import github from '$lib/assets/about/icons/GitHub-Mark-Light-32px.png';
+  import linkedin from '$lib/assets/about/icons/In-White-34.png';
+  import email from '$lib/assets/about/icons/email.png'
 </script>
 
 <div class="about">
