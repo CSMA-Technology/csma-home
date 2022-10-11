@@ -9,7 +9,7 @@
       <img id="csmaLogo" src={csmaLogo} alt="The CSMA logo" />
       <p>CSMA</p>
   </a>
-  <ul class={`nav-links ${isMenuopen ? '' : 'hide-menu'}`}>
+  <ul on:click={() => { isMenuopen = false }} class={`nav-links ${isMenuopen ? '' : 'hide-menu'}`}>
     <li>
       <a href='/projects'>Projects</a>
     </li>

@@ -62,9 +62,14 @@
 
 <style>
   .banner {
-    background-position-y: 43%;
+    /* background-position-y: 43%; */
     filter: saturate(115%);
-    max-width: 300rem;
+    background-size: 100vw 150%;
+    /* max-width: 300rem; */
+  }
+
+  .banner-text {
+    filter: drop-shadow(2px 4px 6px black);
   }
 
   .services {
@@ -98,7 +103,7 @@
 
   @media (max-width: 640px) {
     .banner {
-      background-size: auto;
+      background-size: 200% 150%;
     }
   }
 </style>
