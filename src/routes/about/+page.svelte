@@ -81,6 +81,7 @@
 
   .avatar {
     max-width: 150px;
+    max-height: 150px;
     border-radius: 5px 0px 0px 5px;
   }
 
@@ -175,11 +176,14 @@
       width: 100%;
       padding-top: 5px;
       padding-bottom: 0px;
-      border-radius: 5px 5px 5px 5px;
+      border-radius: 0px 0px 5px 5px;
     }
 
     .avatar {
-      max-width: 200px;
+      width: 100%;
+      max-width: none;
+      max-height: 200px;
+      border-radius: 5px 5px 0px 0px;
     }
 
     .founders-images {
