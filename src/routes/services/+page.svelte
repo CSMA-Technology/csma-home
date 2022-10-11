@@ -71,11 +71,10 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    width: 100%;
   }
 
   .services-cards {
-    width: 100%;
+    width: 75%;
     text-align: left;
     display: flex;
     flex-flow: row wrap;
@@ -83,6 +82,7 @@
   }
 
   .card {
+    height: 75%;
     color: black;
     display: flex;
     align-items: flex-start;

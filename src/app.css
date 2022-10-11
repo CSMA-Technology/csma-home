@@ -94,7 +94,7 @@ p {
   font-size: 1.2em;
 }
 
-h2.subtitle {
+h2.banner-subtitle {
   font-family: 'Lora';
   font-weight: 400;
   font-size: 24px;
@@ -152,6 +152,7 @@ ul {
     font-size: 2em;
   }
   .banner-subtitle {
+    font-family: 'Lora';
     font-size: 1.2em;
   }
 }
