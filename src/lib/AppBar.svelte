@@ -109,7 +109,7 @@
       margin-right: 1rem;
     }
     .nav-links {
-      flex-direction: column;
+      flex-direction: column-reverse;
       z-index: 100;
       background-color: #004046;
       margin-top: 66px;
