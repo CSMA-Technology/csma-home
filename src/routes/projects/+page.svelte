@@ -1,5 +1,5 @@
 <script>
-  import daydream from '$lib/assets/daydream.png'
+  import daydream from '$lib/assets/projects/daydream.png'
 </script>
 
 <div class="projects">
@@ -10,11 +10,6 @@
       Let us build something for you!
     </h2>
   </div>
-  <div class="projects-cards">
-    <div class="card" style="background-image: url({daydream})">
-      asdf
-    </div>
-  </div>
 </div>
 <div class="projects">
   <div class="projects-title">
@@ -23,6 +18,11 @@
       Here are some of our current projects. 
       If you'd like to contribute, reach out to us!
     </h2>
+  </div>
+  <div class="projects-cards">
+    <div class="card">
+      <img id="snapshot" src={daydream} alt="Daydream Games Logo" />
+    </div>
   </div>
 </div>
 
@@ -37,6 +37,7 @@
     justify-content: center;
   }
   .card {
-    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
   }
 </style>
