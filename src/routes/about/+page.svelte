@@ -8,6 +8,10 @@
   import email from '$lib/assets/email.png'
 </script>
 
+<head>
+  <title>About - CSMA Technology</title>
+</head>
+
 <div class="about">
   <h1>About Us</h1>
   <div class="content">

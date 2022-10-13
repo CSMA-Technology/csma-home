@@ -1,3 +1,7 @@
+<head>
+  <title>Contact - CSMA Technology</title>
+</head>
+
 <h1>Contact Us</h1>
 <p>Tell us what you need, and we'll work together to bring it to life.</p>
 <div class="contact-form">
