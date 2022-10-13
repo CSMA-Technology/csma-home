@@ -4,9 +4,9 @@
 
 <div class="banner" id="banner-img" style="background-image: url({servicesBanner})">
   <div class="banner-text">
-    <h1>Here's some of what we offer.</h1>
-    <h2 class="subtitle">
-      There is no limit to your imagination, so we won’t limit our services to what’s on this page. 
+    <h1 class="banner-title">Here's some of what we offer.</h1>
+    <h2 class="banner-subtitle">
+      There is no limit to your imagination, so we won’t limit our services to what’s on this page.
       If you think of something outside of these boxes, let us know, and we’ll work with you to make it happen.
     </h2>
   </div>
@@ -62,38 +62,46 @@
 
 <style>
   .banner {
-    background-position-y: 40%;
     filter: saturate(115%);
+    background-size: 100vw 160%;
   }
 
   .banner-text {
-    text-align: center;
-    color: white;
-    width: 950px;
+    filter: drop-shadow(2px 4px 6px black);
   }
 
   .services {
-    display: flex; 
+    display: flex;
     flex-flow: column wrap;
     align-items: center;
   }
 
   .services-cards {
+    width: 75%;
     text-align: left;
-    width: 1200px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .card {
+    height: 75%;
     color: black;
     display: flex;
     align-items: flex-start;
     background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    width: 350px;
-    height: 200px;
+    width: min(300px, 95vw);
+  }
+
+  .column {
+    flex-grow: 0;
+  }
+
+  @media (max-width: 640px) {
+    .banner {
+      background-size: 200% 150%;
+    }
   }
 </style>
