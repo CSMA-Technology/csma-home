@@ -1,19 +1,19 @@
 <h1>Contact Us</h1>
 <p>Tell us what you need, and we'll work together to bring it to life.</p>
 <div class="contact-form">
-  <form name="email-form" action="/email-success" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+  <form name="email-form" action="/contact/email-success" method="POST" netlify-honeypot="bot-field" data-netlify="true">
     <input type="hidden" name="form-name" value="email-form" />
     <div class="inputs">
       <div class="text-field">
-        <input type="text" id="name" />
+        <input type="text" name="name" id="name" />
         <label for="first-name">Name</label>
       </div>
       <div class="text-field">
-        <input type="email" id="email" />
+        <input type="email" name="email" id="email" />
         <label for="email">Email</label>
       </div>
       <div class="text-field">
-        <textarea id="msg" rows=10 cols=40 />
+        <textarea id="msg" name="message" rows=10 cols=40 />
         <label for="msg">Message</label>
       </div>
     </div>
