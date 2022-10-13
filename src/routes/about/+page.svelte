@@ -1,7 +1,7 @@
 <script>
   import csmaLogo from '$lib/assets/turtle-logo.png';
   import stephanie from '$lib/assets/about/Stephanie.png';
-  import adrian from '$lib/assets/about/adrian.png';
+  import adrian from '$lib/assets/about/adrian.jpg';
   import github from '$lib/assets/about/icons/GitHub-Mark-Light-32px.png';
   import linkedin from '$lib/assets/about/icons/In-White-34.png';
   import email from '$lib/assets/about/icons/email.png'
@@ -9,9 +9,8 @@
 
 <div class="about">
   <h1>About Us</h1>
-  <div class="content">
+  <div class="paper">
     <div class="company">
-
       <div class="company-text">
         <h2 class="btn-label">The Company</h2>
         <p>
@@ -102,7 +101,7 @@
     flex: 5;
   }
 
-  .content {
+  .paper {
     max-width: 900px;
     color: black;
     background-color: white;
