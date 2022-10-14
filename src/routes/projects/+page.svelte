@@ -95,4 +95,10 @@
   .project-title h3, p {
     margin: 0px;
   }
+
+  @media(prefers-color-scheme: dark) {
+    .projects-cards {
+      filter: none;
+    }
+  }
 </style>
