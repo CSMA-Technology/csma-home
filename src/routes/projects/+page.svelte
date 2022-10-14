@@ -29,7 +29,7 @@
   </div>
   <div class="projects-cards">
     <div class="card">
-      <img class="project-snapshot" src={daydream} alt="Daydream Games Logo" />
+      <img class="project-snapshot" src={daydream} alt="Daydream Games Logo" style="filter: saturate(150%);" />
       <div class="project-title">
         <h3>DAYDREAM GAMES</h3>
         <p>Our independent game studio.</p>
