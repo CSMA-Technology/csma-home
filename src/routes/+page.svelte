@@ -3,6 +3,10 @@
   import homeBanner from '$lib/assets/home/CSMA_Graphic_Waves_Top_Right.png';
 </script>
 
+<head>
+  <title>CSMA Technology</title>
+</head>
+
 <div class="banner" style="background-image: url({homeBanner}">
   <div class="banner-text">
     <img class="banner-image" src={csmaTitle} alt='CSMA Technology' />

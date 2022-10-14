@@ -1,3 +1,7 @@
+<head>
+    <title>Contact Success - CSMA Technology</title>
+</head>
+
 <h1>THANK YOU!</h1>
 <h2 class="subtitle">
     We've got your message, and we're excited to work with you.

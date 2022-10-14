@@ -1,25 +1,23 @@
+<head>
+  <title>Contact - CSMA Technology</title>
+</head>
+
 <h1>Contact Us</h1>
 <p>Tell us what you need, and we'll work together to bring it to life.</p>
 <div class="contact-form">
-  <form name="email-form" action="/email-success" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+  <form name="email-form" action="/contact/email-success" method="POST" netlify-honeypot="bot-field" data-netlify="true">
     <input type="hidden" name="form-name" value="email-form" />
     <div class="inputs">
-      <div class="names">
-        <div class="text-field">
-          <input type="text" id="first-name" />
-          <label for="first-name">First Name</label>
-        </div>
-        <div class="text-field">
-          <input type="text" id="last-name" />
-          <label for="last-name">Last Name</label>
-        </div>
+      <div class="text-field">
+        <input type="text" name="name" id="name" />
+        <label for="first-name">Name</label>
       </div>
       <div class="text-field">
-        <input type="text" id="email" />
+        <input type="email" name="email" id="email" />
         <label for="email">Email</label>
       </div>
       <div class="text-field">
-        <textarea id="msg" rows=10 cols=40 />
+        <textarea id="msg" name="message" rows=10 cols=40 />
         <label for="msg">Message</label>
       </div>
     </div>
@@ -28,11 +26,11 @@
 </div>
 
 <style>
-  input[type=text] {
+  input[type=text], input[type=email] {
     height: 40px;
     border: 1px solid #000000;
     border-radius: 5px;
-    min-width: 300px;
+    /* min-width: 300px; */
     font-family: 'Roboto';
     font-size: 16px;
   }
@@ -46,7 +44,7 @@
   }
 
   .inputs {
-    width: 700px;
+    min-width: min(40vw, 700px);
     display: flex;
     flex-flow: column wrap;
   }
@@ -55,12 +53,6 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-  }
-
-  .names {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
   }
 
   .text-field {

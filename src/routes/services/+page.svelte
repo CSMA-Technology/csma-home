@@ -2,6 +2,10 @@
   import servicesBanner from '$lib/assets/services/CSMA_Graphic_Waves_Greens_180.png';
 </script>
 
+<head>
+  <title>Services - CSMA Technology</title>
+</head>
+
 <div class="banner" id="banner-img" style="background-image: url({servicesBanner})">
   <div class="banner-text">
     <h1 class="banner-title">Here's some of what we offer.</h1>
