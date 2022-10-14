@@ -1,9 +1,10 @@
 <script>
-  import daydream from '$lib/assets/projects/daydream.png'
+  import daydream from '$lib/assets/projects/daydream.png';
+  import comingSoon from '$lib/assets/projects/coming-soon.png';
 </script>
 
 <div class="projects">
-  <div>
+  <!-- <div>
     <h1>OUR WORK</h1>
     <h2 class="banner-subtitle">
       Here are some samples of work we've done for our clients.
@@ -14,18 +15,11 @@
     <div class="card">
       <img class="project-snapshot" src={daydream} alt="Daydream Games Logo" />
       <div class="project-title">
-        <h3>DAYDREAM GAMES</h3>
-        <p>Our independent game studio.</p>
+        <h3>KHA WEBSITE</h3>
+        <p>A site redesign and build for KHA.</p>
       </div>
     </div>
-    <div class="card">
-      <img class="project-snapshot" src={daydream} alt="Daydream Games Logo" />
-      <div class="project-title">
-        <h3>DAYDREAM GAMES</h3>
-        <p>Our independent game studio.</p>
-      </div>
-    </div>
-  </div>
+  </div> -->
   <div>
     <h1>OUR PROJECTS</h1>
     <h2 class="banner-subtitle">
@@ -42,10 +36,17 @@
       </div>
     </div>
     <div class="card">
-      <img class="project-snapshot" src={daydream} alt="Daydream Games Logo" />
+      <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
       <div class="project-title">
-        <h3>DAYDREAM GAMES</h3>
-        <p>Our independent game studio.</p>
+        <h3>COMMONMUSK</h3>
+        <p>An opensource bot orchestrator.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
+      <div class="project-title">
+        <h3>STINKPOT</h3>
+        <p>An affordable smart pet feeder.</p>
       </div>
     </div>
   </div>
@@ -63,15 +64,16 @@
   }
 
   .projects-cards {
-    max-width: 700px;
+    width: 50%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
   .card {
     display: flex;
     flex-flow: column wrap;
+    margin: 20px;
   }
 
   .project-snapshot {
@@ -80,7 +82,9 @@
   }
 
   .project-title {
-    text-align: left;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
     background-color: white;
     color: black;
     border-radius: 0px 0px 10px 10px;
