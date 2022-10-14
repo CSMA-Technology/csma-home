@@ -101,6 +101,13 @@
     width: min(300px, 95vw);
   }
 
+  @media(prefers-color-scheme: dark) {
+    .card {
+      color: white;
+      background-color: #303e47;
+    }
+  }
+
   .column {
     flex-grow: 0;
   }

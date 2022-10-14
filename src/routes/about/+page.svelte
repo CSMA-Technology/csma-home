@@ -116,6 +116,13 @@
     border-radius: 10px;
   }
 
+  @media(prefers-color-scheme: dark) {
+    .content {
+      background-color: #303e47;
+      color: white;
+    }
+  }
+
   #csmaLogo {
     width: 150px;
   }
