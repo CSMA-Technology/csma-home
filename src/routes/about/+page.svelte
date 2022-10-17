@@ -18,11 +18,11 @@
       <div class="company-text">
         <h2 class="btn-label">The Company</h2>
         <p>
-          CSMA Technology was started as a place to search for and try to solve interesting and unique problems through technology. Our founders are two outspoken,
-          innovative, and energetic (if not slightly crazy) people who love to take ideas and inspiration from everywhere and bring them to life in creative ways.
+          CSMA Technology was started as a place to find and solve interesting problems through technology. Our founders are two outspoken,
+          innovative, and energetic people who love to take ideas and inspiration from everywhere and bring them to life in creative ways.
           <br /> <br />
-          If you have a need for a custom solution, an outrageous idea that you want to try, or simply a desire to create useful and fun software,
-          please reach out to us with our contact details below. We’d love to work with you.
+          If you need a custom software solution, have a novel app idea, or simply want to create useful and fun software,
+          <a href="/contact">send us a message</a>! We’d love to work with you.
         </p>
       </div>
       <div class="company-images">
@@ -33,13 +33,11 @@
       <div class="founders-text">
         <h2>The Founders</h2>
         <p>
-          Adrian and Stephanie met at their first jobs out of college at American Express in Sunrise, Florida. From the moment that they formed a hackathon
-          team together at work (during which Adrian ended up sleeping in his car and Stephanie commuted straight from a cruise to the office — dedication, people),
-          they knew they made a great team, capable of identifying unique ideas and finding ways to make them real.
+          Adrian and Stephanie met at their first post-college jobs at American Express, and became fast friends.
+          Individually, both Adrian and Stephanie advanced quickly through the engineering ranks, and earned reputations as some of the best engineers in their organization.
           <br /><br />
-          Ever since that first hackathon (and many others, where Adrian and Stephanie were overlooked for some brilliant ideas… not bitter), they continued to team up.
-          From creating materials for Women in Technology to educate colleagues on unconscious biases, to developing a coding bootcamp for children with a
-          completely original curriculum, to joining their brainpower to solve numerous escape rooms despite some very loud bickering, they’ve accomplished some great things.
+          While they were on different teams at AmEx, they found opportunities to work together on hackathons, technical events and lectures, and corporate organizations such as Women in Technology and Campus Recruiting.
+          Over the years, they graduated from work friends to real friends, and it became clear that their work styles complimented each other.
           <br /><br />
           In April 2022, the dynamic duo decided to leave American Express and start a business together, wanting to take on new challenges and explore limitless
           opportunities on their own. Now, they head CSMA Technology, aiming to build impactful software that makes life better.
@@ -171,6 +169,10 @@
       align-items: center;
     }
 
+    .company-text {
+      text-align: start;
+    }
+
     .content {
       padding: 25px;
     }
@@ -197,6 +199,13 @@
 
     .founders-images {
       padding-left: 0;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .paper {
+      color: white;
+      background-color: #303e47;
     }
   }
 </style>

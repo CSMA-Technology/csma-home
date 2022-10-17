@@ -23,7 +23,7 @@
   <div>
     <h1>OUR PROJECTS</h1>
     <h2 class="banner-subtitle">
-      Here are some of our current projects. 
+      Here are some of our current projects.
       If you'd like to contribute, reach out to us!
     </h2>
   </div>
@@ -70,7 +70,7 @@
     justify-content: space-around;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
-  
+
   .card {
     display: flex;
     flex-flow: column wrap;
@@ -99,6 +99,10 @@
   @media(prefers-color-scheme: dark) {
     .projects-cards {
       filter: none;
+    }
+    .project-title {
+      color: white;
+      background-color: #303e47;
     }
   }
 </style>
