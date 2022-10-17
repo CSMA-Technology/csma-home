@@ -43,6 +43,12 @@
     padding: 0.5em;
   }
 
+  @media(prefers-color-scheme: dark) {
+    input, textarea {
+      background-color: #303e47;
+    }
+  }
+
   .inputs {
     min-width: min(40vw, 700px);
     display: flex;
