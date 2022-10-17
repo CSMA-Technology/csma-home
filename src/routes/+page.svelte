@@ -25,7 +25,7 @@
 </div>
 <div class="blurb">
   <p class="blurb-text">Based in South Florida, CSMA Technology is an independent software and consulting company,
-    excited to work clients to provide quality software, with a focus on growing the local community.
+    excited to work with clients to provide quality software, with a focus on growing the local community.
     We build websites, cross-platform applications, and custom software solutions. Our founders, Adrian and Stephanie,
     started this company to bring innovative projects to life. If this sounds exciting, we'd love to work with you!
   </p>
