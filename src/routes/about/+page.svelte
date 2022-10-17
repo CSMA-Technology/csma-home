@@ -1,11 +1,10 @@
 <script>
   import csmaLogo from '$lib/assets/turtle-logo.png';
-  // import csmaTitle from '$lib/assets/csma-title-with-background.png';
-  import stephanie from '$lib/assets/Stephanie.png';
-  import adrian from '$lib/assets/adrian.jpg';
-  import github from '$lib/assets/GitHub-Mark-Light-32px.png';
-  import linkedin from '$lib/assets/In-White-34.png';
-  import email from '$lib/assets/email.png'
+  import stephanie from '$lib/assets/about/Stephanie.png';
+  import adrian from '$lib/assets/about/adrian.jpg';
+  import github from '$lib/assets/about/icons/GitHub-Mark-Light-32px.png';
+  import linkedin from '$lib/assets/about/icons/In-White-34.png';
+  import email from '$lib/assets/about/icons/email.png'
 </script>
 
 <head>
@@ -14,9 +13,8 @@
 
 <div class="about">
   <h1>About Us</h1>
-  <div class="content">
+  <div class="paper">
     <div class="company">
-
       <div class="company-text">
         <h2 class="btn-label">The Company</h2>
         <p>
@@ -50,7 +48,7 @@
       <div class="founders-images">
         <h3 class="subtitle">Adrian Moya</h3>
         <div class="founder-card">
-          <img class="avatar" src={adrian} alt="placeholder" />
+          <img class="avatar" src={adrian} alt="Adrian Moya" />
           <div class="socials">
             <a href="https://github.com/admoya"><img id="logo" src={github} alt="Github Logo" /></a>
             <a href="https://www.linkedin.com/in/adrian-moya-a870a39b/"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
@@ -59,7 +57,7 @@
         </div>
         <h3 class="subtitle">Stephanie Cruz</h3>
         <div class="founder-card">
-          <img class="avatar" src={stephanie} alt="placeholder" />
+          <img class="avatar" src={stephanie} alt="Stephanie Cruz" />
           <div class="socials">
             <a href="https://github.com/exscruzme"><img id="logo" src={github} alt="Github Logo" /></a>
             <a href="https://www.linkedin.com/in/cruz-stephanie/"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
@@ -107,7 +105,7 @@
     flex: 5;
   }
 
-  .content {
+  .paper {
     max-width: 900px;
     color: black;
     background-color: white;

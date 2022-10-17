@@ -1,5 +1,5 @@
 <script>
-  import servicesBanner from '$lib/assets/CSMA_Graphic_Waves_Greens_180.png';
+  import servicesBanner from '$lib/assets/services/CSMA_Graphic_Waves_Greens_180.png';
 </script>
 
 <head>
@@ -66,10 +66,8 @@
 
 <style>
   .banner {
-    /* background-position-y: 43%; */
     filter: saturate(115%);
-    background-size: 100vw 150%;
-    /* max-width: 300rem; */
+    background-size: 100vw 160%;
   }
 
   .banner-text {
