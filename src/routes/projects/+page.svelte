@@ -1,6 +1,9 @@
 <script>
   import daydream from '$lib/assets/projects/daydream.png';
   import comingSoon from '$lib/assets/projects/coming-soon.png';
+  import godot from '$lib/assets/projects/godot-tutorial-ss.png';
+
+  const godotUrl = 'https://medium.com/@exscruzme_/godot-3-5-2d-navigation-tutorial-f95c336ae735';
 </script>
 
 <div class="projects">
@@ -21,9 +24,10 @@
     </div>
   </div> -->
   <div>
-    <h1>OUR PROJECTS</h1>
+    <h1>PROJECTS</h1>
     <h2 class="banner-subtitle">
       Here are some of our current projects.
+      <br />
       If you'd like to contribute, reach out to us!
     </h2>
   </div>
@@ -49,6 +53,25 @@
         <p>An affordable smart pet feeder.</p>
       </div>
     </div>
+  </div>
+  <div>
+    <h1>TUTORIALS</h1>
+    <h2 class="banner-subtitle">
+      We publish tutorials on technical topics as we learn them. 
+      <br />
+      Let us know if there are any topics you'd like us to cover!
+    </h2>
+  </div>
+  <div class="projects-cards">
+    <a href={godotUrl}>
+      <div class="card">
+        <img class="project-snapshot" src={godot} alt="Godot Town" />
+        <div class="project-title">
+          <h3>GODOT TOWN</h3>
+          <p>Godot 3.5 Nav2D Tutorial.</p>
+        </div>
+      </div>
+    </a>
   </div>
 </div>
 <style>
