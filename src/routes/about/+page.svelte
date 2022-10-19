@@ -5,6 +5,13 @@
   import github from '$lib/assets/about/icons/GitHub-Mark-Light-32px.png';
   import linkedin from '$lib/assets/about/icons/In-White-34.png';
   import email from '$lib/assets/about/icons/email.png'
+
+  const adrianGithub = 'https://github.com/admoya';
+  const adrianLinkedin = 'https://www.linkedin.com/in/adrian-moya-a870a39b/';
+  const adrianEmail = 'mailto:adrian@csma.technology';
+  const stephGithub = 'https://github.com/exscruzme';
+  const stephLinkedin = 'https://www.linkedin.com/in/cruz-stephanie/';
+  const stephEmail = 'mailto:stephanie@csma.technology';
 </script>
 
 <head>
@@ -48,18 +55,18 @@
         <div class="founder-card">
           <img class="avatar" src={adrian} alt="Adrian Moya" />
           <div class="socials">
-            <a href="https://github.com/admoya"><img id="logo" src={github} alt="Github Logo" /></a>
-            <a href="https://www.linkedin.com/in/adrian-moya-a870a39b/"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
-            <a href="mailto:adrian@csma.technology"><img id="logo" src={email} alt="Email Logo" /></a>
+            <a href={adrianGithub} target="_blank" rel="noopener noreferrer"><img id="logo" src={github} alt="Github Logo" /></a>
+            <a href={adrianLinkedin} target="_blank" rel="noopener noreferrer"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
+            <a href={adrianEmail}><img id="logo" src={email} alt="Email Logo" /></a>
           </div>
         </div>
         <h3 class="subtitle">Stephanie Cruz</h3>
         <div class="founder-card">
           <img class="avatar" src={stephanie} alt="Stephanie Cruz" />
           <div class="socials">
-            <a href="https://github.com/exscruzme"><img id="logo" src={github} alt="Github Logo" /></a>
-            <a href="https://www.linkedin.com/in/cruz-stephanie/"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
-            <a href="mailto:stephanie@csma.technology"><img id="logo" src={email} alt="Email Logo" /></a>
+            <a href={stephGithub} target="_blank" rel="noopener noreferrer"><img id="logo" src={github} alt="Github Logo" /></a>
+            <a href={stephLinkedin} target="_blank" rel="noopener noreferrer"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
+            <a href={stephEmail}><img id="logo" src={email} alt="Email Logo" /></a>
           </div>
         </div>
       </div>
