@@ -55,18 +55,18 @@
         <div class="founder-card">
           <img class="avatar" src={adrian} alt="Adrian Moya" />
           <div class="socials">
-            <a href={adrianGithub} target="_blank" rel="noopener noreferrer"><img id="logo" src={github} alt="Github Logo" /></a>
-            <a href={adrianLinkedin} target="_blank" rel="noopener noreferrer"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
-            <a href={adrianEmail } target="_blank" rel="noopener noreferrer"><img id="logo" src={email} alt="Email Logo" /></a>
+            <a href={adrianGithub} target="_blank"><img id="logo" src={github} alt="Github Logo" /></a>
+            <a href={adrianLinkedin} target="_blank"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
+            <a href={adrianEmail } target="_blank"><img id="logo" src={email} alt="Email Logo" /></a>
           </div>
         </div>
         <h3 class="subtitle">Stephanie Cruz</h3>
         <div class="founder-card">
           <img class="avatar" src={stephanie} alt="Stephanie Cruz" />
           <div class="socials">
-            <a href={stephGithub} target="_blank" rel="noopener noreferrer"><img id="logo" src={github} alt="Github Logo" /></a>
-            <a href={stephLinkedin} target="_blank" rel="noopener noreferrer"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
-            <a href={stephEmail} target="_blank" rel="noopener noreferrer"><img id="logo" src={email} alt="Email Logo" /></a>
+            <a href={stephGithub} target="_blank"><img id="logo" src={github} alt="Github Logo" /></a>
+            <a href={stephLinkedin} target="_blank"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
+            <a href={stephEmail} target="_blank"><img id="logo" src={email} alt="Email Logo" /></a>
           </div>
         </div>
       </div>

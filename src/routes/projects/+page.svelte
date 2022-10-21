@@ -35,7 +35,7 @@
     </h2>
   </div>
   <div class="projects-cards">
-    <a href={chelydraUrl} target="_blank" rel="noopener noreferrer">
+    <a href={chelydraUrl} target="_blank">
       <div class="card">
         <img class="project-snapshot" src={daydream} alt="Daydream Games Logo" style="filter: saturate(150%);" />
         <div class="project-title">
@@ -44,7 +44,7 @@
         </div>
       </div>
     </a>
-    <a href={commonmuskUrl} target="_blank" rel="noopener noreferrer">
+    <a href={commonmuskUrl} target="_blank">
       <div class="card">
         <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
         <div class="project-title">
@@ -53,7 +53,7 @@
         </div>
       </div>
     </a>
-    <a href={stinkpotUrl} target="_blank" rel="noopener noreferrer">
+    <a href={stinkpotUrl} target="_blank">
       <div class="card">
         <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
         <div class="project-title">
@@ -72,7 +72,7 @@
     </h2>
   </div>
   <div class="projects-cards">
-    <a href={godotUrl} target="_blank" rel="noopener noreferrer">
+    <a href={godotUrl} target="_blank">
       <div class="card">
         <img class="project-snapshot" src={godot} alt="Godot Town" />
         <div class="project-title">
