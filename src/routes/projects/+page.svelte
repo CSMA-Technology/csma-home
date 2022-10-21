@@ -2,7 +2,10 @@
   import daydream from '$lib/assets/projects/daydream.png';
   import comingSoon from '$lib/assets/projects/coming-soon.png';
   import godot from '$lib/assets/projects/godot-tutorial-ss.png';
-
+  
+  const chelydraUrl = 'https://github.com/CSMA-Technology/chelydra';
+  const commonmuskUrl = 'https://github.com/CSMA-Technology/commonmusk-discord-bot';
+  const stinkpotUrl = 'https://github.com/CSMA-Technology/stinkpot-controller';
   const godotUrl = 'https://medium.com/@exscruzme_/godot-3-5-2d-navigation-tutorial-f95c336ae735';
 </script>
 
@@ -32,43 +35,49 @@
     </h2>
   </div>
   <div class="projects-cards">
-    <div class="card">
-      <img class="project-snapshot" src={daydream} alt="Daydream Games Logo" style="filter: saturate(150%);" />
-      <div class="project-title">
-        <h3>DAYDREAM GAMES</h3>
-        <p>Our independent game studio.</p>
+    <a href={chelydraUrl} target="_blank">
+      <div class="card">
+        <img class="project-snapshot" src={daydream} alt="Daydream Games Logo" style="filter: saturate(150%);" />
+        <div class="project-title">
+          <h3>CHELYDRA (DESK DEFENDER)</h3>
+          <p>A 2D Tower Defense Deck-Building Game.</p>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
-      <div class="project-title">
-        <h3>COMMONMUSK</h3>
-        <p>An opensource bot orchestrator.</p>
+    </a>
+    <a href={commonmuskUrl} target="_blank">
+      <div class="card">
+        <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
+        <div class="project-title">
+          <h3>COMMONMUSK</h3>
+          <p>An opensource bot orchestrator.</p>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
-      <div class="project-title">
-        <h3>STINKPOT</h3>
-        <p>An affordable smart pet feeder.</p>
+    </a>
+    <a href={stinkpotUrl} target="_blank">
+      <div class="card">
+        <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
+        <div class="project-title">
+          <h3>STINKPOT</h3>
+          <p>An affordable smart pet feeder.</p>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
   <div>
     <h1>TUTORIALS</h1>
     <h2 class="banner-subtitle">
-      We publish tutorials on technical topics as we learn them. 
+      We publish tutorials on a variety of technical topics.
       <br />
       Let us know if there are any topics you'd like us to cover!
     </h2>
   </div>
   <div class="projects-cards">
-    <a href={godotUrl}>
+    <a href={godotUrl} target="_blank">
       <div class="card">
         <img class="project-snapshot" src={godot} alt="Godot Town" />
         <div class="project-title">
           <h3>GODOT TOWN</h3>
-          <p>Godot 3.5 Nav2D Tutorial.</p>
+          <p>A Godot 3.5 Nav2D Tutorial.</p>
         </div>
       </div>
     </a>
@@ -113,6 +122,7 @@
     color: black;
     border-radius: 0px 0px 10px 10px;
     padding: 10px;
+    font-size: 0.8em;
   }
 
   .project-title h3, p {
