@@ -3,7 +3,9 @@
   import comingSoon from '$lib/assets/projects/coming-soon.png';
   import godot from '$lib/assets/projects/godot-tutorial-ss.png';
   
-  const chelydraUrl = 'https://github.com/CSMA-Technology/chelydra'
+  const chelydraUrl = 'https://github.com/CSMA-Technology/chelydra';
+  const commonmuskUrl = 'https://github.com/CSMA-Technology/commonmusk-discord-bot';
+  const stinkpotUrl = 'https://github.com/CSMA-Technology/stinkpot-controller';
   const godotUrl = 'https://medium.com/@exscruzme_/godot-3-5-2d-navigation-tutorial-f95c336ae735';
 </script>
 
@@ -42,20 +44,24 @@
         </div>
       </div>
     </a>
-    <div class="card">
-      <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
-      <div class="project-title">
-        <h3>COMMONMUSK</h3>
-        <p>An opensource bot orchestrator.</p>
+    <a href={commonmuskUrl} target="_blank" rel="noopener noreferrer">
+      <div class="card">
+        <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
+        <div class="project-title">
+          <h3>COMMONMUSK</h3>
+          <p>An opensource bot orchestrator.</p>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
-      <div class="project-title">
-        <h3>STINKPOT</h3>
-        <p>An affordable smart pet feeder.</p>
+    </a>
+    <a href={stinkpotUrl} target="_blank" rel="noopener noreferrer">
+      <div class="card">
+        <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
+        <div class="project-title">
+          <h3>STINKPOT</h3>
+          <p>An affordable smart pet feeder.</p>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
   <div>
     <h1>TUTORIALS</h1>
