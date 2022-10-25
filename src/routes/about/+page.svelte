@@ -44,7 +44,7 @@
           Individually, both Adrian and Stephanie advanced quickly through the engineering ranks, and earned reputations as some of the best engineers in their organization.
           <br /><br />
           While they were on different teams at AmEx, they found opportunities to work together on hackathons, technical events and lectures, and corporate organizations such as Women in Technology and Campus Recruiting.
-          Over the years, they graduated from work friends to real friends, and it became clear that their work styles complimented each other.
+          Over the years, they graduated from work friends to real friends, and it became clear that their work styles complemented each other.
           <br /><br />
           In April 2022, the dynamic duo decided to leave American Express and start a business together, wanting to take on new challenges and explore limitless
           opportunities on their own. Now, they head CSMA Technology, aiming to build impactful software that makes life better.
