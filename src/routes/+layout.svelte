@@ -9,13 +9,15 @@
   import "@fontsource/roboto-condensed"
   import "@fontsource/lora"
   import AppBar from '$lib/AppBar.svelte';
+	import { browser } from '$app/environment';
 
   // Google Analytics
-  window.dataLayer = window.dataLayer || [];
   function gtag(){window.dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1V8VXFQFBB');
+  if (browser) {
+    window.dataLayer = window.dataLayer || [];
+    gtag('js', new Date());
+    gtag('config', 'G-1V8VXFQFBB');
+  }
 </script>
 
 <style>
