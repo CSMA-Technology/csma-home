@@ -2,7 +2,8 @@
   import daydream from '$lib/assets/projects/daydream.png';
   import comingSoon from '$lib/assets/projects/coming-soon.png';
   import godot from '$lib/assets/projects/godot-tutorial-ss.png';
-  
+  import khaLogo from '$lib/assets/projects/kha-logo.png';
+
   const chelydraUrl = 'https://github.com/CSMA-Technology/chelydra';
   const commonmuskUrl = 'https://github.com/CSMA-Technology/commonmusk-discord-bot';
   const stinkpotUrl = 'https://github.com/CSMA-Technology/stinkpot-controller';
@@ -35,6 +36,15 @@
     </h2>
   </div>
   <div class="projects-cards">
+    <a href="https://kendalehoa.org" target="_blank">
+      <div class="card">
+        <img class="project-snapshot" src={khaLogo} alt="Daydream Games Logo" style="filter: saturate(150%);" />
+        <div class="project-title">
+          <h3>Kendale Homeowners Association</h3>
+          <p>A custom site with payments and contact features</p>
+        </div>
+      </div>
+    </a>
     <a href={chelydraUrl} target="_blank">
       <div class="card">
         <img class="project-snapshot" src={daydream} alt="Daydream Games Logo" style="filter: saturate(150%);" />
@@ -107,11 +117,14 @@
     display: flex;
     flex-flow: column wrap;
     margin: 20px;
+    max-width: 300px;
   }
 
   .project-snapshot {
     border-radius: 10px 10px 0px 0px;
     max-width: 300px;
+    /* max-height: 235px; */
+    object-fit: cover;
   }
 
   .project-title {
