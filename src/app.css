@@ -38,6 +38,7 @@ a.btn:hover {
 body {
   margin: 0;
   display: flex;
+  overflow-x: hidden;
 }
 
 button, .btn {
