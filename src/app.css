@@ -82,6 +82,15 @@ h2.btn-label {
   margin-bottom: 0px;
 }
 
+.paper {
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 3%;
+  background-color: #fff7f0;
+  color: black;
+  max-width: min(90%, 100rem);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: black;
