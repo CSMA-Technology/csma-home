@@ -11,22 +11,6 @@
 </script>
 
 <div class="projects">
-  <!-- <div>
-    <h1>OUR WORK</h1>
-    <h2 class="banner-subtitle">
-      Here are some samples of work we've done for our clients.
-      Let us build something for you!
-    </h2>
-  </div>
-  <div class="projects-cards">
-    <div class="card">
-      <img class="project-snapshot" src={daydream} alt="Daydream Games Logo" />
-      <div class="project-title">
-        <h3>KHA WEBSITE</h3>
-        <p>A site redesign and build for KHA.</p>
-      </div>
-    </div>
-  </div> -->
   <div>
     <h1>PROJECTS</h1>
     <h2 class="banner-subtitle">
@@ -36,7 +20,7 @@
     </h2>
   </div>
   <div class="projects-cards">
-    <a href="https://kendalehoa.org" target="_blank">
+    <a href="https://kendalehoa.org" rel="noreferrer" target="_blank">
       <div class="card">
         <img class="project-snapshot" src={khaLogo} alt="Daydream Games Logo" style="filter: saturate(150%);" />
         <div class="project-title">
@@ -45,7 +29,7 @@
         </div>
       </div>
     </a>
-    <a href={chelydraUrl} target="_blank">
+    <a href={chelydraUrl} rel="noreferrer" target="_blank">
       <div class="card">
         <img class="project-snapshot" src={daydream} alt="Daydream Games Logo" style="filter: saturate(150%);" />
         <div class="project-title">
@@ -54,7 +38,7 @@
         </div>
       </div>
     </a>
-    <a href={commonmuskUrl} target="_blank">
+    <a href={commonmuskUrl} rel="noreferrer" target="_blank">
       <div class="card">
         <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
         <div class="project-title">
@@ -63,7 +47,7 @@
         </div>
       </div>
     </a>
-    <a href={stinkpotUrl} target="_blank">
+    <a href={stinkpotUrl} rel="noreferrer" target="_blank">
       <div class="card">
         <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
         <div class="project-title">
@@ -82,7 +66,7 @@
     </h2>
   </div>
   <div class="projects-cards">
-    <a href={godotUrl} target="_blank">
+    <a href={godotUrl} rel="noreferrer" target="_blank">
       <div class="card">
         <img class="project-snapshot" src={godot} alt="Godot Town" />
         <div class="project-title">

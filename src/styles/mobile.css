@@ -1,0 +1,23 @@
+.banner {
+  background-size: contain;
+}
+.banner-text {
+  width: auto;
+  max-width: 90%;
+  padding-right: 0;
+  margin-left: 1rem;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.banner-title {
+  font-size: 2em;
+}
+.banner-subtitle {
+  font-family: 'Lora';
+  font-size: 1.2em;
+}
+
+.paper {
+  padding-top: 0.5rem;
+}

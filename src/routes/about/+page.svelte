@@ -55,18 +55,18 @@
         <div class="founder-card">
           <img class="avatar" src={adrian} alt="Adrian Moya" />
           <div class="socials">
-            <a href={adrianGithub} target="_blank"><img id="logo" src={github} alt="Github Logo" /></a>
-            <a href={adrianLinkedin} target="_blank"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
-            <a href={adrianEmail } target="_blank"><img id="logo" src={email} alt="Email Logo" /></a>
+            <a href={adrianGithub} rel="noreferrer" target="_blank"><img id="logo" src={github} alt="Github Logo" /></a>
+            <a href={adrianLinkedin} rel="noreferrer" target="_blank"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
+            <a href={adrianEmail } rel="noreferrer" target="_blank"><img id="logo" src={email} alt="Email Logo" /></a>
           </div>
         </div>
         <h3 class="subtitle">Stephanie Cruz</h3>
         <div class="founder-card">
           <img class="avatar" src={stephanie} alt="Stephanie Cruz" />
           <div class="socials">
-            <a href={stephGithub} target="_blank"><img id="logo" src={github} alt="Github Logo" /></a>
-            <a href={stephLinkedin} target="_blank"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
-            <a href={stephEmail} target="_blank"><img id="logo" src={email} alt="Email Logo" /></a>
+            <a href={stephGithub} rel="noreferrer" target="_blank"><img id="logo" src={github} alt="Github Logo" /></a>
+            <a href={stephLinkedin} rel="noreferrer" target="_blank"><img id="logo" src={linkedin} alt="Linkedin Logo" /></a>
+            <a href={stephEmail} rel="noreferrer" target="_blank"><img id="logo" src={email} alt="Email Logo" /></a>
           </div>
         </div>
       </div>
@@ -108,22 +108,6 @@
   .company-text {
     text-align: right;
     flex: 5;
-  }
-
-  .paper {
-    max-width: 900px;
-    color: black;
-    background-color: white;
-    padding: 25px 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-  }
-
-  @media(prefers-color-scheme: dark) {
-    .content {
-      background-color: #303e47;
-      color: white;
-    }
   }
 
   #csmaLogo {
@@ -180,10 +164,6 @@
       text-align: start;
     }
 
-    .content {
-      padding: 25px;
-    }
-
     .founders {
       flex-direction: column;
       align-items: center;
@@ -209,10 +189,4 @@
     }
   }
 
-  @media (prefers-color-scheme: dark) {
-    .paper {
-      color: white;
-      background-color: #303e47;
-    }
-  }
 </style>
