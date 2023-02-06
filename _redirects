@@ -1,2 +1,3 @@
-/tools/listmonk http://moya.mynetgear.com:9001/ 200
-/public http://moya.mynetgear.com:9001/ 200
+/tools/listmonk/* http://moya.mynetgear.com:9001/:splat 200
+/public/* http://moya.mynetgear.com:9001/public/:splat 200
+/admin/*  http://moya.mynetgear.com:9001/admin/:splat 200
