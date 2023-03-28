@@ -24,7 +24,7 @@
     <div class="company">
       <div class="company-text">
         <h2 class="btn-label">The Company</h2>
-        <p>
+        <p class="company-detail-text">
           CSMA Technology was started as a place to find and solve interesting problems through technology. Our founders are two outspoken,
           innovative, and energetic people who love to take ideas and inspiration from everywhere and bring them to life in creative ways.
           <br /> <br />
@@ -154,7 +154,17 @@
     border-radius: 0px 5px 5px 0px;
   }
 
+  .company-detail-text {
+    text-align: justify;
+    margin-left: 1rem;
+  }
+
   @media (max-width: 640px) {
+    .company-detail-text {
+      text-align: left;
+      margin-left: 0;
+    }
+
     .company {
       flex-direction: column;
       align-items: center;

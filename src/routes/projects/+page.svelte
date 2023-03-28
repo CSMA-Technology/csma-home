@@ -3,6 +3,7 @@
   import comingSoon from '$lib/assets/projects/coming-soon.png';
   import godot from '$lib/assets/projects/godot-tutorial-ss.png';
   import khaLogo from '$lib/assets/projects/kha-logo.png';
+  import blendLogo from '$lib/assets/projects/blend-logo.png';
 
   const chelydraUrl = 'https://github.com/CSMA-Technology/chelydra';
   const commonmuskUrl = 'https://github.com/CSMA-Technology/commonmusk-discord-bot';
@@ -16,16 +17,34 @@
     <h2 class="banner-subtitle">
       Here are some of our current projects.
       <br />
-      If you'd like to contribute, reach out to us!
+      If you want to know more, reach out to us!
     </h2>
   </div>
   <div class="projects-cards">
+    <a href="https://app.blendreading.com" rel="noreferrer" target="_blank">
+      <div class="card">
+        <img class="project-snapshot" src={blendLogo} alt="Daydream Games Logo" style="filter: saturate(150%);" />
+        <div class="project-title">
+          <h3>Blend</h3>
+          <p>A modern take on the Orton-Gillingham method of literacy training. Developed in collaboration with <a target="_blank" href="https://www.sageliteracy.org/">Sage Literacy</a></p>
+        </div>
+      </div>
+    </a>
+    <a href="https://blendreading.com" rel="noreferrer" target="_blank">
+      <div class="card">
+        <img class="project-snapshot" src={blendLogo} alt="Daydream Games Logo" style="filter: saturate(150%);" />
+        <div class="project-title">
+          <h3>Blend Product Site</h3>
+          <p>A marketing website with account management features and Stripe subscription integration.</p>
+        </div>
+      </div>
+    </a>
     <a href="https://kendalehoa.org" rel="noreferrer" target="_blank">
       <div class="card">
         <img class="project-snapshot" src={khaLogo} alt="Daydream Games Logo" style="filter: saturate(150%);" />
         <div class="project-title">
-          <h3>Kendale Homeowners Association</h3>
-          <p>A custom site with payments and contact features</p>
+          <h3>KHA Website</h3>
+          <p>A custom website with integrated payments and contact features</p>
         </div>
       </div>
     </a>
@@ -43,7 +62,7 @@
         <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
         <div class="project-title">
           <h3>COMMONMUSK</h3>
-          <p>An opensource bot orchestrator.</p>
+          <p>An open-sourced bot orchestrator for NodeJS.</p>
         </div>
       </div>
     </a>
@@ -52,7 +71,7 @@
         <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
         <div class="project-title">
           <h3>STINKPOT</h3>
-          <p>An affordable smart pet feeder.</p>
+          <p>An smart pet feeder with <a target="_blank" href="https://csa-iot.org/all-solutions/matter/">Matter</a> integration.</p>
         </div>
       </div>
     </a>
@@ -60,9 +79,9 @@
   <div>
     <h1>TUTORIALS</h1>
     <h2 class="banner-subtitle">
-      We publish tutorials on a variety of technical topics.
+      We publish tutorials on the tools we use to build our apps. 
       <br />
-      Let us know if there are any topics you'd like us to cover!
+      We have more in development, so check back soon!
     </h2>
   </div>
   <div class="projects-cards">
