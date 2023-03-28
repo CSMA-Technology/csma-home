@@ -10,8 +10,7 @@
   <div class="banner-text">
     <h1 class="banner-title">Here's some of what we offer.</h1>
     <h2 class="banner-subtitle">
-      There is no limit to your imagination, so we won’t limit our services to what’s on this page.
-      If you think of something outside of these boxes, let us know, and we’ll work with you to make it happen.
+      We offer a variety of white-glove services for our clients, from building bespoke apps to setting up marketing platforms. We are also still just getting started, so reach out to us if you have technology needs that you don't see below.
     </h2>
   </div>
 </div>
@@ -19,14 +18,29 @@
 <div class="services">
   <div class="services-cards">
     <div class="column">
-      <h2 class="btn-label">DEVELOPMENT</h2>
+      <h2 class="btn-label">WEBSITE DEVELOPMENT</h2>
       <div class="card">
         <ul>
-          <li>Website Development</li>
-          <li>Mobile App Development</li>
-          <li>Game Design & Development</li>
-          <li>Software Troubleshooting & Maintenance</li>
-          <li>Custom Software Solutions</li>
+          <li>Mobile-first design</li>
+          <li>Payment and storefront integrations</li>
+          <li>Detailed usage analytics</li>
+          <li>Fast, accessible, and multi-language</li>
+          <li>Built on cutting-edge technology</li>
+          <li>White-glove support</li>
+          <li>Fixed pricing model</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="column">
+      <h2 class="btn-label">CUSTOM SOFTWARE</h2>
+      <div class="card">
+        <ul>
+          <li>Custom marketing solutions</li>
+          <li>Workflow automations</li>
+          <li>Cross-platform integrations</li>
+          <li>Search Engine Optimization (SEO)</li>
+          <li>Custom mobile apps</li>
         </ul>
       </div>
     </div>
@@ -35,12 +49,10 @@
       <h2 class="btn-label">CONSULTING</h2>
       <div class="card">
         <ul>
-          <li>Website & App Re-Design</li>
-          <li>Architecture Design</li>
-          <li>Technical Writing</li>
-          <li>Software Training & Setup</li>
-          <li>Software Advisory</li>
-          <li>Software Evaluation</li>
+          <li>Website & app re-design</li>
+          <li>AI integration</li>
+          <li>Technical writing</li>
+          <li>Software training & setup</li>
         </ul>
       </div>
     </div>
@@ -57,7 +69,7 @@
     </div>
   </div>
 
-  <div>
+  <div style="margin-top: 2rem;">
     <h2 class="btn-label">WORK WITH US</h2>
     <a class="btn" href='/contact'>Contact Us</a>
   </div>
@@ -97,6 +109,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     width: min(300px, 95vw);
+    margin-bottom: 1rem;
   }
 
   @media(prefers-color-scheme: dark) {

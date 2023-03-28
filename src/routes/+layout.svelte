@@ -8,10 +8,17 @@
 
   // Google Analytics
   function gtag(){window.dataLayer.push(arguments);}
+
+  let ready = false;
   if (browser) {
     window.dataLayer = window.dataLayer || [];
     gtag('js', new Date());
     gtag('config', 'G-1V8VXFQFBB');
+
+    document.fonts.ready.then(() => {
+      ready = true;
+      document.fonts.forEach((f) => console.log(`${f.family}: ${f.status}`))
+    })
   }
 </script>
 
@@ -19,9 +26,15 @@
   main {
     text-align: center;
   }
+  .hide {
+    opacity: 0;
+    overflow: hidden;
+  }
 </style>
 
-<AppBar/>
-<main>
-  <slot></slot>
-</main>
+<div class={`${ready ? '' : 'hide'}`}>
+  <AppBar/>
+  <main>
+    <slot></slot>
+  </main>
+</div>
