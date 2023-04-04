@@ -2,9 +2,9 @@
   import servicesBanner from '$lib/assets/services/CSMA_Graphic_Waves_Greens_180.png';
 </script>
 
-<head>
+<svelte:head>
   <title>Services - CSMA Technology</title>
-</head>
+</svelte:head>
 
 <div class="banner" id="banner-img" style="background-image: url({servicesBanner})">
   <div class="banner-text">

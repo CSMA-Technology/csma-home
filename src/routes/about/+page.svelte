@@ -14,9 +14,9 @@
   const stephEmail = 'mailto:stephanie@csma.technology';
 </script>
 
-<head>
+<svelte:head>
   <title>About - CSMA Technology</title>
-</head>
+</svelte:head>
 
 <div class="about">
   <h1>About Us</h1>

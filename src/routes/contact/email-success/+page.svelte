@@ -1,6 +1,6 @@
-<head>
+<svelte:head>
     <title>Contact Success - CSMA Technology</title>
-</head>
+</svelte:head>
 
 <h1>THANK YOU!</h1>
 <h2 class="subtitle">
