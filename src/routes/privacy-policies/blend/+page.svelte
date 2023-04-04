@@ -1,6 +1,11 @@
 <script>
 import policy from './policy';
 </script>
+
+<svelte:head>
+  <title>Privacy Policy - CSMA Technology</title>
+</svelte:head>
+
 <section>
   <h1>Blend Privacy Policy</h1>
   <div class="paper">

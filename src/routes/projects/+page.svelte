@@ -11,6 +11,10 @@
   const godotUrl = 'https://medium.com/@exscruzme_/godot-3-5-2d-navigation-tutorial-f95c336ae735';
 </script>
 
+<svelte:head>
+  <title>Projects - CSMA Technology</title>
+</svelte:head>
+
 <div class="projects">
   <div>
     <h1>PROJECTS</h1>
