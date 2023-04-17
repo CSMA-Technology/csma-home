@@ -46,6 +46,10 @@
     background-size: 100%;
   }
 
+  .app-bar a:hover {
+    color: #040622;
+  }
+
   .branding {
     display: flex;
     flex-direction: row;

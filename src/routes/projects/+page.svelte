@@ -4,6 +4,8 @@
   import godot from '$lib/assets/projects/godot-tutorial-ss.png';
   import khaLogo from '$lib/assets/projects/kha-logo.png';
   import blendLogo from '$lib/assets/projects/blend-logo.png';
+  
+  import FeaturedProject from '$lib/components/FeaturedProject.svelte';
 
   const chelydraUrl = 'https://github.com/CSMA-Technology/chelydra';
   const commonmuskUrl = 'https://github.com/CSMA-Technology/commonmusk-discord-bot';
@@ -16,8 +18,10 @@
 </svelte:head>
 
 <div class="projects">
+  <h1>Our Work</h1>
+  <FeaturedProject />
   <div>
-    <h1>PROJECTS</h1>
+    <h1>Other Projects</h1>
     <h2 class="banner-subtitle">
       Here are some of our current projects.
       <br />
@@ -25,33 +29,6 @@
     </h2>
   </div>
   <div class="projects-cards">
-    <a href="https://app.blendreading.com" rel="noreferrer" target="_blank">
-      <div class="card">
-        <img class="project-snapshot" src={blendLogo} alt="Daydream Games Logo" style="filter: saturate(150%);" />
-        <div class="project-title">
-          <h3>Blend</h3>
-          <p>A modern take on the Orton-Gillingham method of literacy training. Developed in collaboration with <a target="_blank" href="https://www.sageliteracy.org/">Sage Literacy</a></p>
-        </div>
-      </div>
-    </a>
-    <a href="https://blendreading.com" rel="noreferrer" target="_blank">
-      <div class="card">
-        <img class="project-snapshot" src={blendLogo} alt="Daydream Games Logo" style="filter: saturate(150%);" />
-        <div class="project-title">
-          <h3>Blend Product Site</h3>
-          <p>A marketing website with account management features and Stripe subscription integration.</p>
-        </div>
-      </div>
-    </a>
-    <a href="https://kendalehoa.org" rel="noreferrer" target="_blank">
-      <div class="card">
-        <img class="project-snapshot" src={khaLogo} alt="Daydream Games Logo" style="filter: saturate(150%);" />
-        <div class="project-title">
-          <h3>KHA Website</h3>
-          <p>A custom website with integrated payments and contact features</p>
-        </div>
-      </div>
-    </a>
     <a href={chelydraUrl} rel="noreferrer" target="_blank">
       <div class="card">
         <img class="project-snapshot" src={daydream} alt="Daydream Games Logo" style="filter: saturate(150%);" />
@@ -121,6 +98,7 @@
   }
 
   .card {
+    text-align: left;
     display: flex;
     flex-flow: column wrap;
     margin: 20px;
