@@ -4,8 +4,8 @@ export default {
     tags: ["Godot", "SvelteKit", "TypeScript", "Firebase", "Netlify", "Stripe", "Listmonk"],
     description: `CSMA's founders have always had an interest in the intersection of education and technology. So when our friend and founder of 
     <a href="https://www.sageliteracy.org/" target="_blank" rel="noopener noreferrer">Sage Literacy</a>, Summer Kiesel,
-    approached us with the idea of virtualizing a physical teaching tool that she uses every day, we were excited to build something
-    that could revolutionize the way teachers teach phonics. Blend is our collaborative take on the modern blending board.`,
+    approached us with the idea of virtualizing a physical teaching tool that she uses every day, we were excited to get involved. 
+    We wanted to build something that could revolutionize phonics instruction. Blend is our collaborative take on the modern blending board.`,
     points: [
       "Fully interactive virtual offering for physical blending boards",
       "Stripe integration for subscriptions processing",
