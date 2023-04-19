@@ -47,6 +47,7 @@
   }
 
   .app-bar a:hover {
+    text-decoration: none;
     color: #040622;
   }
 

@@ -2,10 +2,10 @@
   import daydream from '$lib/assets/projects/daydream.png';
   import comingSoon from '$lib/assets/projects/coming-soon.png';
   import godot from '$lib/assets/projects/godot-tutorial-ss.png';
-  import khaLogo from '$lib/assets/projects/kha-logo.png';
-  import blendLogo from '$lib/assets/projects/blend-logo.png';
-  
   import FeaturedProject from '$lib/components/FeaturedProject.svelte';
+  import featuredProjects from '$lib/data/featuredProjects';
+  import blend from '$lib/assets/projects/blend-feature/play.png';
+  import kha from '$lib/assets/projects/kha-feature/kha-home.png';
 
   const chelydraUrl = 'https://github.com/CSMA-Technology/chelydra';
   const commonmuskUrl = 'https://github.com/CSMA-Technology/commonmusk-discord-bot';
@@ -17,9 +17,22 @@
   <title>Projects - CSMA Technology</title>
 </svelte:head>
 
+<h1>Our Work</h1>
 <div class="projects">
-  <h1>Our Work</h1>
-  <FeaturedProject />
+  <FeaturedProject
+    title={featuredProjects.blend.title}
+    image={blend}
+    tags={featuredProjects.blend.tags}
+    description={featuredProjects.blend.description}
+    points={featuredProjects.blend.points}
+  />
+  <FeaturedProject
+    title={featuredProjects.kha.title}
+    image={kha}
+    tags={featuredProjects.kha.tags}
+    description={featuredProjects.kha.description}
+    points={featuredProjects.kha.points}
+  />
   <div>
     <h1>Other Projects</h1>
     <h2 class="banner-subtitle">
@@ -82,7 +95,6 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    margin: 20px;
   }
 
   .projects h1, h2 {
@@ -108,7 +120,6 @@
   .project-snapshot {
     border-radius: 10px 10px 0px 0px;
     max-width: 300px;
-    /* max-height: 235px; */
     object-fit: cover;
   }
 
