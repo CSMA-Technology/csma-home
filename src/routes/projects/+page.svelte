@@ -2,8 +2,10 @@
   import daydream from '$lib/assets/projects/daydream.png';
   import comingSoon from '$lib/assets/projects/coming-soon.png';
   import godot from '$lib/assets/projects/godot-tutorial-ss.png';
-  import khaLogo from '$lib/assets/projects/kha-logo.png';
-  import blendLogo from '$lib/assets/projects/blend-logo.png';
+  import FeaturedProject from '$lib/components/FeaturedProject.svelte';
+  import featuredProjects from '$lib/data/featuredProjects';
+  import blend from '$lib/assets/projects/blend-feature/play.png';
+  import kha from '$lib/assets/projects/kha-feature/kha-home.png';
 
   const chelydraUrl = 'https://github.com/CSMA-Technology/chelydra';
   const commonmuskUrl = 'https://github.com/CSMA-Technology/commonmusk-discord-bot';
@@ -15,9 +17,24 @@
   <title>Projects - CSMA Technology</title>
 </svelte:head>
 
+<h1>Our Work</h1>
 <div class="projects">
+  <FeaturedProject
+    title={featuredProjects.blend.title}
+    image={blend}
+    tags={featuredProjects.blend.tags}
+    description={featuredProjects.blend.description}
+    points={featuredProjects.blend.points}
+  />
+  <FeaturedProject
+    title={featuredProjects.kha.title}
+    image={kha}
+    tags={featuredProjects.kha.tags}
+    description={featuredProjects.kha.description}
+    points={featuredProjects.kha.points}
+  />
   <div>
-    <h1>PROJECTS</h1>
+    <h1>Other Projects</h1>
     <h2 class="banner-subtitle">
       Here are some of our current projects.
       <br />
@@ -25,33 +42,6 @@
     </h2>
   </div>
   <div class="projects-cards">
-    <a href="https://app.blendreading.com" rel="noreferrer" target="_blank">
-      <div class="card">
-        <img class="project-snapshot" src={blendLogo} alt="Daydream Games Logo" style="filter: saturate(150%);" />
-        <div class="project-title">
-          <h3>Blend</h3>
-          <p>A modern take on the Orton-Gillingham method of literacy training. Developed in collaboration with <a target="_blank" href="https://www.sageliteracy.org/">Sage Literacy</a></p>
-        </div>
-      </div>
-    </a>
-    <a href="https://blendreading.com" rel="noreferrer" target="_blank">
-      <div class="card">
-        <img class="project-snapshot" src={blendLogo} alt="Daydream Games Logo" style="filter: saturate(150%);" />
-        <div class="project-title">
-          <h3>Blend Product Site</h3>
-          <p>A marketing website with account management features and Stripe subscription integration.</p>
-        </div>
-      </div>
-    </a>
-    <a href="https://kendalehoa.org" rel="noreferrer" target="_blank">
-      <div class="card">
-        <img class="project-snapshot" src={khaLogo} alt="Daydream Games Logo" style="filter: saturate(150%);" />
-        <div class="project-title">
-          <h3>KHA Website</h3>
-          <p>A custom website with integrated payments and contact features</p>
-        </div>
-      </div>
-    </a>
     <a href={chelydraUrl} rel="noreferrer" target="_blank">
       <div class="card">
         <img class="project-snapshot" src={daydream} alt="Daydream Games Logo" style="filter: saturate(150%);" />
@@ -105,7 +95,6 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    margin: 20px;
   }
 
   .projects h1, h2 {
@@ -121,6 +110,7 @@
   }
 
   .card {
+    text-align: left;
     display: flex;
     flex-flow: column wrap;
     margin: 20px;
@@ -129,8 +119,7 @@
 
   .project-snapshot {
     border-radius: 10px 10px 0px 0px;
-    max-width: 300px;
-    /* max-height: 235px; */
+    max-width: min(300px, 85vw);
     object-fit: cover;
   }
 
