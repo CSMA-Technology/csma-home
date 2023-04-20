@@ -119,7 +119,7 @@
 
   .project-snapshot {
     border-radius: 10px 10px 0px 0px;
-    max-width: 300px;
+    max-width: min(300px, 85vw);
     object-fit: cover;
   }
 
