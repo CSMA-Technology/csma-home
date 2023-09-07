@@ -14,19 +14,16 @@ export default {
       "Custom mailing list solution for marketing campaigns and consumer updates"
     ]
   },
-  kha: {
-    title: "KHA Website",
-    tags: ["SvelteKit", "TypeScript", "Netlify", "PayPal", "Venmo", "Listmonk"],
-    description: `Our client, Kendale Homeowners Association, wanted to reimagine their website with a focus on attracting new
-    members and keeping engaged with their current member base. We redesigned and built their new
-    website entirely from scratch, and elevated its functionality with new features tailored to
-    our client's needs.`,
+  customWebsites: {
+    title: "Custom Websites",
+    tags: ["SvelteKit", "TypeScript", "Netlify", "PayPal", "Venmo", "Listmonk", "Google Analytics"],
+    description: `With over a decade of experience in web development, we specialize in creating user-friendly, high-performance websites for our clients. We use the latest technology and test across a wide variety of devices to ensure that our sites are built to the highest possible standards.`,
     points: [
       "Custom design and build of a responsive, lightweight website",
 			"PayPal and Venmo integrations for onsite payment processing",
-			"Embedded Instagram feed to display KHA's latest posts and updates",
-			"Custom mailing list solution for centralized email campaign management used by the KHA board",
-			"Custom logo design for KHA's branding"
+			"Embedded social media feeds to showcase client's online presence",
+			"Custom mailing list solution for email campaign management",
+			"Detailed analytics to track and analyze site traffic"
     ]
   }
 }

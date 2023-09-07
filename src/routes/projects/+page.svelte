@@ -1,16 +1,11 @@
 <script>
-  import daydream from '$lib/assets/projects/daydream.png';
-  import comingSoon from '$lib/assets/projects/coming-soon.png';
-  import godot from '$lib/assets/projects/godot-tutorial-ss.png';
-  import FeaturedProject from '$lib/components/FeaturedProject.svelte';
-  import featuredProjects from '$lib/data/featuredProjects';
+  import github from '$lib/assets/github.png';
   import blend from '$lib/assets/projects/blend-feature/play.png';
   import kha from '$lib/assets/projects/kha-feature/kha-home.png';
+  import FeaturedProject from '$lib/components/FeaturedProject.svelte';
+  import featuredProjects from '$lib/data/featuredProjects';
 
-  const chelydraUrl = 'https://github.com/CSMA-Technology/chelydra';
-  const commonmuskUrl = 'https://github.com/CSMA-Technology/commonmusk-discord-bot';
-  const stinkpotUrl = 'https://github.com/CSMA-Technology/stinkpot-controller';
-  const godotUrl = 'https://medium.com/@exscruzme_/godot-3-5-2d-navigation-tutorial-f95c336ae735';
+  const githubUrl = 'https://github.com/CSMA-Technology';
 </script>
 
 <svelte:head>
@@ -27,67 +22,32 @@
     points={featuredProjects.blend.points}
   />
   <FeaturedProject
-    title={featuredProjects.kha.title}
+    title={featuredProjects.customWebsites.title}
     image={kha}
-    tags={featuredProjects.kha.tags}
-    description={featuredProjects.kha.description}
-    points={featuredProjects.kha.points}
+    tags={featuredProjects.customWebsites.tags}
+    description={featuredProjects.customWebsites.description}
+    points={featuredProjects.customWebsites.points}
   />
-  <div>
-    <h1>Other Projects</h1>
-    <h2 class="banner-subtitle">
-      Here are some of our current projects.
-      <br />
-      If you want to know more, reach out to us!
-    </h2>
-  </div>
-  <div class="projects-cards">
-    <a href={chelydraUrl} rel="noreferrer" target="_blank">
-      <div class="card">
-        <img class="project-snapshot" src={daydream} alt="Daydream Games Logo" style="filter: saturate(150%);" />
-        <div class="project-title">
-          <h3>CHELYDRA (DESK DEFENDER)</h3>
-          <p>A 2D Tower Defense Deck-Building Game.</p>
+  <div class="other-projects">
+    <div style="width: 100%;">
+      <h1 style="text-align: center;">Libraries & Other Projects</h1>
+      <p class="banner-subtitle" >
+        We're always tinkering and building new tools.
+        <br />
+        Check our our Github page to get a peek at what we're working on.
+      </p>
+    </div>
+    <div class="projects-cards">
+      <a href={githubUrl} rel="noreferrer" target="_blank">
+        <div class="card">
+          <img class="project-snapshot" src={github} alt="Github Logo" style="max-height: 230px" />
+          <div class="project-title">
+            <h3>CSMA on Github</h3>
+            <p>The home for our public code repositories.</p>
+          </div>
         </div>
-      </div>
-    </a>
-    <a href={commonmuskUrl} rel="noreferrer" target="_blank">
-      <div class="card">
-        <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
-        <div class="project-title">
-          <h3>COMMONMUSK</h3>
-          <p>An open-sourced bot orchestrator for NodeJS.</p>
-        </div>
-      </div>
-    </a>
-    <a href={stinkpotUrl} rel="noreferrer" target="_blank">
-      <div class="card">
-        <img class="project-snapshot" src={comingSoon} alt="Coming Soon" />
-        <div class="project-title">
-          <h3>STINKPOT</h3>
-          <p>An smart pet feeder with <a target="_blank" href="https://csa-iot.org/all-solutions/matter/">Matter</a> integration.</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div>
-    <h1>TUTORIALS</h1>
-    <h2 class="banner-subtitle">
-      We publish tutorials on the tools we use to build our apps. 
-      <br />
-      We have more in development, so check back soon!
-    </h2>
-  </div>
-  <div class="projects-cards">
-    <a href={godotUrl} rel="noreferrer" target="_blank">
-      <div class="card">
-        <img class="project-snapshot" src={godot} alt="Godot Town" />
-        <div class="project-title">
-          <h3>GODOT TOWN</h3>
-          <p>A Godot 3.5 Nav2D Tutorial.</p>
-        </div>
-      </div>
-    </a>
+      </a>
+    </div>
   </div>
 </div>
 <style>
@@ -107,6 +67,16 @@
     flex-flow: row wrap;
     justify-content: space-around;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 0 auto;
+  }
+
+  .other-projects {
+    width: min(40rem, 80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
   }
 
   .card {
