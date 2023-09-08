@@ -1,7 +1,6 @@
 <script>
   import github from '$lib/assets/github.png';
-  import blend from '$lib/assets/projects/blend-feature/play.png';
-  import kha from '$lib/assets/projects/kha-feature/kha-home.png';
+
   import FeaturedProject from '$lib/components/FeaturedProject.svelte';
   import featuredProjects from '$lib/data/featuredProjects';
 
@@ -14,20 +13,17 @@
 
 <h1>Our Work</h1>
 <div class="projects">
+  {#each featuredProjects as { title, image, tags, description, points, url, imageAlt}}  
   <FeaturedProject
-    title={featuredProjects.blend.title}
-    image={blend}
-    tags={featuredProjects.blend.tags}
-    description={featuredProjects.blend.description}
-    points={featuredProjects.blend.points}
+    {title}
+    {image}
+    {imageAlt}
+    {tags}
+    {description}
+    {points}
+    {url}
   />
-  <FeaturedProject
-    title={featuredProjects.customWebsites.title}
-    image={kha}
-    tags={featuredProjects.customWebsites.tags}
-    description={featuredProjects.customWebsites.description}
-    points={featuredProjects.customWebsites.points}
-  />
+  {/each}
   <div class="other-projects">
     <div style="width: 100%;">
       <h1 style="text-align: center;">Libraries & Other Projects</h1>
