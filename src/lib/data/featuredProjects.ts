@@ -1,5 +1,7 @@
-export default {
-  blend: {
+import blend from '$lib/assets/projects/blend-feature/play.png';
+import kha from '$lib/assets/projects/kha-feature/kha-home.png';
+export default [
+  {
     title: "Blend", 
     tags: ["Godot", "SvelteKit", "TypeScript", "Firebase", "Netlify", "Stripe", "Listmonk"],
     description: `We've always had an interest in the intersection of education and technology. So when our friend and the founder of 
@@ -11,22 +13,26 @@ export default {
       "Stripe integration for subscriptions processing",
       "Responsive product site built to showcase Blend",
       "Onsite user account management flow",
-      "Custom mailing list solution for marketing campaigns and consumer updates"
-    ]
+      "Custom mailing list solution for marketing campaigns and consumer updates",
+      "Organizational licenses for groups of educators"
+    ],
+    imageAlt: "Blend App Play Screen",
+    url: "https://blendreading.com",
+    image: blend,
   },
-  kha: {
-    title: "KHA Website",
-    tags: ["SvelteKit", "TypeScript", "Netlify", "PayPal", "Venmo", "Listmonk"],
-    description: `Our client, Kendale Homeowners Association, wanted to reimagine their website with a focus on attracting new
-    members and keeping engaged with their current member base. We redesigned and built their new
-    website entirely from scratch, and elevated its functionality with new features tailored to
-    our client's needs.`,
+  {
+    title: "Custom Websites",
+    tags: ["SvelteKit", "TypeScript", "Netlify", "PayPal", "Venmo", "Listmonk", "Google Analytics"],
+    description: `With over a decade of experience in web development, we specialize in creating user-friendly, high-performance websites for our clients. We use the latest technology and test across a wide variety of devices to ensure that our sites are built to the highest possible standards.`,
     points: [
       "Custom design and build of a responsive, lightweight website",
 			"PayPal and Venmo integrations for onsite payment processing",
-			"Embedded Instagram feed to display KHA's latest posts and updates",
-			"Custom mailing list solution for centralized email campaign management used by the KHA board",
-			"Custom logo design for KHA's branding"
-    ]
+			"Embedded social media feeds to showcase client's online presence",
+			"Custom mailing list solution for email campaign management",
+			"Detailed analytics to track and analyze site traffic"
+    ],
+    imageAlt: "A custom website built for KHA",
+    url: "https://kendalehoa.org",
+    image: kha,
   }
-}
+]

@@ -5,6 +5,8 @@
   import '../app.css'
   import AppBar from '$lib/AppBar.svelte';
 	import { browser } from '$app/environment';
+	import { fade } from 'svelte/transition';
+	import { page } from '$app/stores';
 
   // Google Analytics
   function gtag(){window.dataLayer.push(arguments);}
@@ -34,7 +36,11 @@
 
 <div class={`${ready ? '' : 'hide'}`}>
   <AppBar/>
-  <main>
-    <slot></slot>
+  <main in:fade>
+    {#key $page}
+      <div in:fade={{duration: 500}}>
+        <slot></slot>
+      </div>
+    {/key}
   </main>
 </div>
