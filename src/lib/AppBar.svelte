@@ -1,79 +1,79 @@
 <script lang="ts">
-	import csmaLogo from '$lib/assets/turtle-logo.png';
+  import csmaLogo from '$lib/assets/turtle-logo.png';
 
-	var isMenuopen = false;
+  var isMenuopen = false;
 </script>
 
 <div class="fixed top-0 left-0 w-full bg-none z-10">
-	<nav class="app-bar bg-surface-500 rounded-3xl mx-auto w-fit m-1 border-tertiary-500 border-2">
-		<a class="branding ml-2 mr-1 md:mr-8" href="/">
-			<img id="csmaLogo" class="min-w-10" src={csmaLogo} alt="The CSMA logo" />
-			<p class="font-heading-token text-2xl ml-1 max-md:hidden">CSMA</p>
-		</a>
-		<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-		<ul
-			on:click={() => {
-				isMenuopen = false;
-			}}
-			on:keypress={() => {
-				isMenuopen = false;
-			}}
-			class="flex flex-row-reverse gap-3 items-center mx-2">
-			<li>
-				<a href="/projects">Projects</a>
-			</li>
-			<li>
-				<a href="/about">About</a>
-			</li>
-			<li>
-				<a href="/services">Services</a>
-			</li>
-			<li>
-				<a href="/contact">Contact</a>
-			</li>
-		</ul>
-		<button
-			on:click={() => {
-				isMenuopen = !isMenuopen;
-			}}
-			class="hamburger-button">
-			{#if isMenuopen}
-				<span class="material-symbols-outlined">close</span>
-			{:else}
-				<span class="material-symbols-outlined">menu</span>
-			{/if}
-		</button>
-	</nav>
+  <nav class="app-bar bg-surface-500 rounded-3xl mx-auto w-fit m-1 border-tertiary-500 border-2">
+    <a class="branding ml-2 mr-1 md:mr-8" href="/">
+      <img id="csmaLogo" class="min-w-10" src={csmaLogo} alt="The CSMA logo" />
+      <p class="font-heading-token text-2xl ml-1 max-md:hidden">CSMA</p>
+    </a>
+    <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+    <ul
+      on:click={() => {
+        isMenuopen = false;
+      }}
+      on:keypress={() => {
+        isMenuopen = false;
+      }}
+      class="flex flex-row-reverse gap-3 items-center mx-2">
+      <li>
+        <a href="/projects">Projects</a>
+      </li>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a href="/services">Services</a>
+      </li>
+      <li>
+        <a href="/contact">Contact</a>
+      </li>
+    </ul>
+    <button
+      on:click={() => {
+        isMenuopen = !isMenuopen;
+      }}
+      class="hamburger-button">
+      {#if isMenuopen}
+        <span class="material-symbols-outlined">close</span>
+      {:else}
+        <span class="material-symbols-outlined">menu</span>
+      {/if}
+    </button>
+  </nav>
 </div>
 
 <style>
-	.app-bar {
-		height: 50px;
-		/* width: 100vw; */
-		display: flex;
-		flex-direction: row;
-		background-size: 100%;
-	}
+  .app-bar {
+    height: 50px;
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: row;
+    background-size: 100%;
+  }
 
-	.app-bar a:hover {
-		text-decoration: none;
-		color: #040622;
-	}
+  .app-bar a:hover {
+    text-decoration: none;
+    color: #040622;
+  }
 
-	.branding {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		text-align: center;
-		max-width: 156px;
-	}
+  .branding {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    max-width: 156px;
+  }
 
-	#csmaLogo {
-		height: 20px;
-		margin-top: -4px;
-	}
+  #csmaLogo {
+    height: 20px;
+    margin-top: -4px;
+  }
 
-	.hamburger-button {
-		display: none;
-	}
+  .hamburger-button {
+    display: none;
+  }
 </style>
