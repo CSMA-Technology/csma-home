@@ -18,18 +18,18 @@
       on:keypress={() => {
         isMenuopen = false;
       }}
-      class="flex flex-row-reverse gap-3 items-center mx-2">
+      class="flex flex-row-reverse gap-3 items-center mx-2 max-sm:text-base">
       <li>
-        <a href="/projects">Projects</a>
+        <a class="font-medium" href="/projects">Projects</a>
       </li>
       <li>
-        <a href="/about">About</a>
+        <a class="font-medium" href="/about">About</a>
       </li>
       <li>
-        <a href="/services">Services</a>
+        <a class="font-medium" href="/services">Services</a>
       </li>
       <li>
-        <a href="/contact">Contact</a>
+        <a class="font-medium" href="/contact">Contact</a>
       </li>
     </ul>
     <button
