@@ -10,8 +10,10 @@
 
 <div class="feature">
 	<div class="top">
-		<a href={url} target="_blank" rel="noopener noreferrer"><h2>{title}</h2></a>
-		<ul class="tags">
+		<a href={url} target="_blank" rel="noopener noreferrer">
+			<h2 class="h2 text-surface-400 max-md:text-4xl">{title}</h2>
+		</a>
+		<ul class="tags my-2">
 			{#each tags as tag}
 				<li>{tag}</li>
 			{/each}
@@ -21,9 +23,9 @@
 		<div class="feature-images">
 			<a href={url} target="_blank" rel="noopener noreferrer"><img src={image} alt={imageAlt} /></a>
 		</div>
-		<div class="text-content">
+		<div class="text-content mt-2">
 			<p>{@html description}</p>
-			<ul>
+			<ul class="list-disc pl-8 mt-2 mb-8">
 				{#each points as point}
 					<li>{point}</li>
 				{/each}
@@ -69,11 +71,6 @@
 	.text-content {
 		flex-basis: 40rem;
 		text-align: justify;
-	}
-
-	h2 {
-		margin: 0;
-		font-size: 2.5rem;
 	}
 
 	.tags {
