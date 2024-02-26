@@ -1,33 +1,11 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 100%;
-  line-height: 24px;
-  font-weight: 400;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #040622;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
 a {
   font-weight: 700;
-  color: #3399CC;
+  color: #3399cc;
   text-decoration: inherit;
 }
 a:hover {
   color: #00838f;
   text-decoration: underline;
-}
-a.btn {
-  color: black;
-}
-a.btn:hover {
-  color: white;
 }
 
 .brand {
@@ -40,47 +18,6 @@ body {
   margin: 0;
   display: flex;
   overflow-x: hidden;
-}
-
-button, .btn {
-  color: black;
-  width: 150px;
-  border-radius: 5px;
-  border: 1px solid transparent;
-  padding: 0.6em 0.6em;
-  font-size: 1.2em;
-  font-weight: 700;
-  font-family: 'Roboto';
-  background: #FF8E58;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  display: inline-block;
-}
-button:hover {
-  color: white;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-h1 {
-  font-family: 'Bebas Neue';
-  font-style: normal;
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-h2 {
-  font-family: 'Bebas Neue';
-  font-style: normal;
-  font-size: 2.2em;
-  line-height: 1.1;
-}
-
-h2.btn-label {
-  margin-bottom: 0px;
 }
 
 .paper {

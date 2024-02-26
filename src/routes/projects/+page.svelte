@@ -11,50 +11,41 @@
   <title>Projects - CSMA Technology</title>
 </svelte:head>
 
-<h1>Our Work</h1>
-<div class="projects">
-  {#each featuredProjects as { title, image, tags, description, points, url, imageAlt}}  
-  <FeaturedProject
-    {title}
-    {image}
-    {imageAlt}
-    {tags}
-    {description}
-    {points}
-    {url}
-  />
-  {/each}
-  <div class="other-projects">
-    <div style="width: 100%;">
-      <h1 style="text-align: center;">Libraries & Other Projects</h1>
-      <p class="banner-subtitle" >
-        We're always tinkering and building new tools.
-        <br />
-        Check our our Github page to get a peek at what we're working on.
-      </p>
-    </div>
-    <div class="projects-cards">
-      <a href={githubUrl} rel="noreferrer" target="_blank">
-        <div class="card">
-          <img class="project-snapshot" src={github} alt="Github Logo" style="max-height: 230px" />
-          <div class="project-title">
-            <h3>CSMA on Github</h3>
-            <p>The home for our public code repositories.</p>
+<div class="mt-20">
+  <h1 class="h1 mb-6 max-md:text-5xl">Our Work</h1>
+  <div class="projects">
+    {#each featuredProjects as { title, image, tags, description, points, url, imageAlt }}
+      <FeaturedProject {title} {image} {imageAlt} {tags} {description} {points} {url} />
+    {/each}
+    <div class="other-projects">
+      <div style="width: 100%;">
+        <h2 class="h1 text-center">Libraries & Other Projects</h2>
+        <p class="banner-subtitle">
+          We're always tinkering and building new tools.
+          <br />
+          Check our our Github page to get a peek at what we're working on.
+        </p>
+      </div>
+      <div class="projects-cards">
+        <a href={githubUrl} rel="noreferrer" target="_blank">
+          <div class="card">
+            <img class="project-snapshot" src={github} alt="Github Logo" style="max-height: 230px" />
+            <div class="project-title">
+              <h3 class="h3 font-light" style="font-size: 2em;">CSMA on Github</h3>
+              <p>The home for our public code repositories.</p>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 </div>
+
 <style>
   .projects {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-  }
-
-  .projects h1, h2 {
-    margin: 10px 0px;
   }
 
   .projects-cards {
@@ -100,11 +91,12 @@
     font-size: 0.8em;
   }
 
-  .project-title h3, p {
+  .project-title h3,
+  p {
     margin: 0px;
   }
 
-  @media(prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     .projects-cards {
       filter: none;
     }

@@ -1,5 +1,5 @@
 <script>
-import policy from './policy';
+  import policy from './policy';
 </script>
 
 <svelte:head>
@@ -34,5 +34,4 @@ import policy from './policy';
   h1 {
     margin: 1.2rem auto 0 auto;
   }
-
 </style>
