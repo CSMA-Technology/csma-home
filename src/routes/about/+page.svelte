@@ -59,7 +59,7 @@
           impactful software that makes life better.
         </p>
       </div>
-      <div class="founders-images">
+      <div class="pl-5 md:my-auto mt-3">
         <p class="subtitle text-xl font-serif">Adrian Moya</p>
         <div class="flex flex-row">
           <img class="avatar" src={adrian} alt="Adrian Moya" />
@@ -89,8 +89,8 @@
 
 <style>
   .avatar {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 150px !important;
+    max-height: 150px !important;
     border-radius: 5px 0px 0px 5px;
   }
 
@@ -119,16 +119,6 @@
   .founders {
     display: flex;
     flex-flow: row wrap;
-  }
-
-  .founders-images {
-    /* max-width: 200px; */
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-end;
-    justify-content: center;
-    flex: 1;
-    padding-left: 20px;
   }
 
   .founders-text {
@@ -174,17 +164,6 @@
     .founders {
       flex-direction: column;
       align-items: center;
-    }
-
-    .avatar {
-      width: 100%;
-      max-width: none;
-      max-height: 200px;
-      /* border-radius: 5px 5px 0px 0px; */
-    }
-
-    .founders-images {
-      padding-left: 0;
     }
   }
 </style>

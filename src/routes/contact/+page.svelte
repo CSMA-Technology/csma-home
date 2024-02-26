@@ -3,7 +3,7 @@
 </svelte:head>
 
 <div class="w-screen mt-20">
-  <div class="flex flex-col flex-wrap justify-center max-w-xl mx-auto px-4">
+  <div class="flex flex-col flex-wrap justify-center max-w-xl mx-auto px-5">
     <h1 class="h1 mb-4 max-md:text-5xl">Contact Us</h1>
     <div class="leading-6 text-justify">
       <p>Looking to build a website? Need to design an ad campaign? Just want to ask what an "LLM" is? We can help.</p>
