@@ -30,6 +30,12 @@ body {
   margin: 1rem auto;
 }
 
+.banner-subtitle {
+  font-family: 'Lora' !important;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
 @media (prefers-color-scheme: dark) {
   .paper {
     color: white;
@@ -37,30 +43,10 @@ body {
   }
 }
 
-/* .paper {
-  padding: 1rem;
-  border-radius: 3%;
-  background-color: #fff7f0;
-  color: black;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: black;
-    background-color: #fff7f0;
-  }
-} */
-
 p {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 1.2em;
-}
-
-h2.banner-subtitle {
-  font-family: 'Lora';
-  font-weight: 400;
-  font-size: 1.5em;
 }
 
 h3 {

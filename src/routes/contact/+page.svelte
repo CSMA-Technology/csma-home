@@ -9,12 +9,7 @@
       <p>Looking to build a website? Need to design an ad campaign? Just want to ask what an "LLM" is? We can help.</p>
       <p class="my-2">Tell us what you need, and we'll work together to get it done.</p>
     </div>
-    <form
-      name="email-form"
-      action="/contact/email-success"
-      method="POST"
-      netlify-honeypot="bot-field"
-      data-netlify="true">
+    <form name="email-form" action="/contact/email-success" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="email-form" />
       <div class="inputs">
         <div class="text-field">
