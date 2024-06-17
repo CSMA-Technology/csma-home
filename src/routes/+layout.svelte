@@ -28,9 +28,9 @@
 
 <div class={`${ready ? '' : 'hide'}`}>
   <AppBar></AppBar>
-  <main in:fade>
+  <main in:fade class="w-screen">
     {#key $page}
-      <div in:fade={{ duration: 500 }}>
+      <div in:fade={{ duration: 500 }} class="w-screen max-w-[165rem] mx-auto relative">
         <slot />
       </div>
     {/key}

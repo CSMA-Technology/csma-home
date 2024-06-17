@@ -5,7 +5,7 @@
 </script>
 
 <div class="fixed top-0 left-0 w-full bg-none z-10">
-  <nav class="app-bar bg-surface-500 rounded-3xl mx-auto w-fit m-1 border-tertiary-500 border-2">
+  <nav class="app-bar bg-surface-500 rounded-3xl mx-auto w-fit m-1 border-tertiary-500 border-2 px-1">
     <a class="branding ml-2 mr-1 md:mr-8" href="/">
       <img id="csmaLogo" class="min-w-10" src={csmaLogo} alt="The CSMA logo" />
       <p class="font-heading-token text-2xl ml-1 max-md:hidden">CSMA</p>
