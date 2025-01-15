@@ -21,7 +21,7 @@
           <label for="email">Email</label>
         </div>
         <div class="text-field">
-          <textarea id="msg" name="message" rows="10" cols="40" />
+          <textarea id="msg" name="message" rows="10" cols="40"></textarea>
           <label for="msg">Message</label>
         </div>
       </div>

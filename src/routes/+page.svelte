@@ -10,7 +10,7 @@
     { text: 'Marketing Tools', color: 'text-green-500' },
     { text: 'Your Next Project', color: 'text-purple-500' }
   ];
-  let currentItem = 0;
+  let currentItem = $state(0);
   const interval = setInterval(() => {
     currentItem = currentItem + 1;
     if (currentItem === buildItems.length - 1) {
@@ -19,9 +19,9 @@
   }, 4000);
 </script>
 
-<head>
+<svelte:head>
   <title>CSMA Technology</title>
-</head>
+</svelte:head>
 
 <img
   alt=""
@@ -75,7 +75,7 @@
         </div>
         <div class="card p-6 sm:min-w-64 rounded-xl variant-glass-surface">
           <p class="h3 text-2xl mb-4">CHECK OUT OUR WORK</p>
-          <a class="btn btn-md variant-filled-surface" href="/contact">Our Projects</a>
+          <a class="btn btn-md variant-filled-surface" href="/projects">Our Projects</a>
         </div>
       </div>
     </div>

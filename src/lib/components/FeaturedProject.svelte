@@ -1,14 +1,18 @@
 <script lang="ts">
-  export let title: string;
-  export let image: string;
-  export let imageAlt: string;
-  export let tags: string[];
-  export let description: string;
-  export let points: string[];
-  export let url: string;
+  interface Props {
+    title: string;
+    image: string;
+    imageAlt: string;
+    tags: string[];
+    description: string;
+    points: string[];
+    url: string;
+  }
+
+  let { title, image, imageAlt, tags, description, points, url }: Props = $props();
 </script>
 
-<div class="feature">
+<div class="feature rounded-xl w-fit p-4 !mb-6 variant-glass-secondary">
   <div class="top">
     <a href={url} target="_blank" rel="noopener noreferrer">
       <h2 class="h2 text-surface-400 max-md:text-4xl">{title}</h2>
@@ -19,11 +23,11 @@
       {/each}
     </ul>
   </div>
-  <div class="side-by-side">
+  <div class="flex flex-row gap-4 mt-2 mx-auto w-fit items-center flex-wrap">
     <div class="feature-images">
-      <a href={url} target="_blank" rel="noopener noreferrer"><img src={image} alt={imageAlt} /></a>
+      <a href={url} target="_blank" rel="noopener noreferrer"><img width="640" src={image} alt={imageAlt} /></a>
     </div>
-    <div class="text-content mt-2">
+    <div class="max-w-xl text-justify mt-2 leading-7">
       <p>{@html description}</p>
       <ul class="list-disc pl-8 mt-2 mb-8">
         {#each points as point}
@@ -36,7 +40,7 @@
 
 <style>
   .feature {
-    width: 80%;
+    /* width: 80%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,14 +53,6 @@
     align-items: center;
     justify-content: center;
   }
-  .side-by-side {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 1rem;
-  }
 
   .feature-images {
     flex-basis: 40rem;
@@ -64,13 +60,8 @@
 
   .feature-images img {
     border-radius: 10px;
-    width: 100%;
+    /* width: 100%; */
     object-fit: contain;
-  }
-
-  .text-content {
-    flex-basis: 40rem;
-    text-align: justify;
   }
 
   .tags {

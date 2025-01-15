@@ -2,7 +2,7 @@
   import github from '$lib/assets/github.png';
 
   import FeaturedProject from '$lib/components/FeaturedProject.svelte';
-  import featuredProjects from '$lib/data/featuredProjects';
+  import featuredProjects, { websites } from '$lib/data/featuredProjects';
 
   const githubUrl = 'https://github.com/CSMA-Technology';
 </script>
@@ -12,21 +12,31 @@
 </svelte:head>
 
 <div class="mt-20">
-  <h1 class="h1 mb-6 max-md:text-5xl">Our Work</h1>
+  <h1 class="h1 mb-6 max-md:text-5xl">Our Apps</h1>
   <div class="projects">
     {#each featuredProjects as { title, image, tags, description, points, url, imageAlt }}
       <FeaturedProject {title} {image} {imageAlt} {tags} {description} {points} {url} />
     {/each}
+    <div class="projects">
+      <h2 class="h1">Custom Websites</h2>
+      <p class="max-w-7xl !mb-4">
+        We leverage our web development experience to provide small businesses and non-profits in our area with modern,
+        performant, and responsive websites, complete with analytics, email marketing tools, and payments integrations.
+      </p>
+      {#each websites as { title, image, tags, description, points, url, imageAlt }}
+        <FeaturedProject {title} {image} {imageAlt} {tags} {description} {points} {url} />
+      {/each}
+    </div>
     <div class="other-projects">
       <div style="width: 100%;">
         <h2 class="h1 text-center">Libraries & Other Projects</h2>
-        <p class="banner-subtitle">
+        <p class="max-w-7xl !mb-4 text-center">
           We're always tinkering and building new tools.
           <br />
           Check our our Github page to get a peek at what we're working on.
         </p>
       </div>
-      <div class="projects-cards">
+      <div class="max-w-xs">
         <a href={githubUrl} rel="noreferrer" target="_blank">
           <div class="card">
             <img class="project-snapshot" src={github} alt="Github Logo" style="max-height: 230px" />

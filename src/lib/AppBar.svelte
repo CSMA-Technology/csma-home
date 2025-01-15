@@ -1,7 +1,7 @@
 <script lang="ts">
   import csmaLogo from '$lib/assets/turtle-logo.png';
 
-  var isMenuopen = false;
+  var isMenuopen = $state(false);
 </script>
 
 <div class="fixed top-0 left-0 w-full bg-none z-10">
@@ -10,12 +10,12 @@
       <img id="csmaLogo" class="min-w-10" src={csmaLogo} alt="The CSMA logo" />
       <p class="font-heading-token text-2xl ml-1 max-md:hidden">CSMA</p>
     </a>
-    <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+    <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
     <ul
-      on:click={() => {
+      onclick={() => {
         isMenuopen = false;
       }}
-      on:keypress={() => {
+      onkeypress={() => {
         isMenuopen = false;
       }}
       class="flex flex-row-reverse gap-3 items-center mx-2 max-sm:text-base">
@@ -33,7 +33,7 @@
       </li>
     </ul>
     <button
-      on:click={() => {
+      onclick={() => {
         isMenuopen = !isMenuopen;
       }}
       class="hamburger-button">
