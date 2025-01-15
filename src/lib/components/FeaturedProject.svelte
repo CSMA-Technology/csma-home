@@ -23,7 +23,7 @@
       {/each}
     </ul>
   </div>
-  <div class="flex flex-row gap-4 mt-2 mx-auto w-fit items-center flex-wrap">
+  <div class="flex flex-row gap-4 mt-2 mx-auto w-fit items-center flex-wrap md:flex-nowrap">
     <div class="feature-images">
       <a href={url} target="_blank" rel="noopener noreferrer"><img width="640" src={image} alt={imageAlt} /></a>
     </div>
